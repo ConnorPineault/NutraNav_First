@@ -1,0 +1,96 @@
+Product Name                                      Price               
+======================================================================
+English Cucumber                                  1 ea, $1.44/1ea     
+Green Onion                                       1 bunch, $1.49/1ea  
+Roma Tomatoes                                     $5.49/1kg $2.49/1lb 
+Grape Tomatoes                                    283 g, $1.06/100g   
+Celery Stalks                                     1 ea, $2.99/1ea     
+Yellow Onions, 3 lb Bag                           1.36 kg, $0.22/100g 
+Lettuce Iceberg                                   1 ea, $2.99/1ea     
+Tomato Beefsteak Red                              $4.89/1kg $2.22/1lb 
+Red Peppers                                       $11.00/1kg $4.99/1lb
+Tomato On The Vine Red (1 Bunch)                  $7.69/1kg $3.49/1lb 
+Carrots, 3 lb Bag                                 1.362 kg, $0.26/100g
+Broccoli Crown                                    1 ea, $1.88/1ea     
+Cauliflower                                       1 ea, $3.99/1ea     
+Sweet Green Peppers                               $8.80/1kg $3.99/1lb 
+Red Onion                                         $6.15/1kg $2.79/1lb 
+Ginger                                            $5.49/1kg $2.49/1lb 
+Zucchini                                          $6.59/1kg $2.99/1lb 
+Sweet Potato                                      $3.73/1kg $1.69/1lb 
+Sweet Baby Peppers (4-Pack)                       1 ea, $1.25/1ea     
+Garlic Bulbs, 3-count                             90 g, $0.33/1ea     
+Russet Potatoes, 10 lb Bag                        4.54 kg, $0.13/100g 
+Mini Cucumbers                                    6 pack, $0.48/1ea   
+Naturally Imperfect Mixed Sweet Peppers 2.5lb Bag 1.113 kg, $0.54/100g
+Broccoli                                          1 ea, $3.49/1ea     
+Asparagus                                         325 g, $0.92/100g   
+Sweet Onion                                       $6.15/1kg $2.79/1lb 
+Colossal Garlic                                   $11.00/1kg $4.99/1lb
+Mini Carrots                                      340 g, $0.73/100g   
+Romaine Lettuce                                   1 ea, $2.99/1ea     
+Whole White Mushrooms                             227 g, $1.10/100g   
+Grape Tomato 907G                                 908 g, $0.88/100g   
+Yellow Potato, 10 lb Bag                          4.54 kg, $0.11/100g 
+Cabbage, Green                                    $2.18/1kg $0.99/1lb 
+Red Field Peppers, 4-Pack                         1 ea, $1.25/1ea     
+Kale                                              1 bunch, $1.49/1ea  
+Mini Carrots, 2 lb                                907 g, $0.50/100g   
+Green Leaf Lettuce                                1 ea, $2.99/1ea     
+Romaine Hearts                                    1 ea, $2.00/1ea     
+Greenhouse Peppers, Orange                        $11.00/1kg $4.99/1lb
+White Mushrooms                                   227 g, $1.32/100g   
+Yellow Mini Potatoes                              0.68 kg, $0.59/100g 
+Organics Whole Cremini Mushrooms                  227 g, $1.32/100g   
+Organic Beet Bunch                                699 g, $0.71/100g   
+Chinese Bitter Melons                             $5.49/1kg $2.49/1lb 
+Carrots, 5 lb bag                                 2.268 kg, $0.22/100g
+Jamaican Sweet Potatoes                           $11.00/1kg $4.99/1lb
+Brown Mushrooms                                   680 g, $0.59/100g   
+Bananas, Bunch                                    $1.30/1kg $0.59/1lb 
+Strawberries 1LB                                  454 g, $0.54/100g   
+Extra Large Green Seedless Grapes                 $6.59/1kg $2.99/1lb 
+Avocados Bag, 5-Pack                              1 ea, $0.78/1ea     
+Extra Large Red Seedless Grapes                   $6.59/1kg $2.99/1lb 
+Blueberries 1 pint                                340 g, $1.76/100g   
+Lemon                                             1 ea, $0.89/1ea     
+Cantaloupe                                        1 ea, $1.88/1ea     
+Strawberries 2LB                                  907 g, $0.66/100g   
+Organic Bananas, Bunch                            $2.18/1kg $0.99/1lb 
+Raspberries 1/2 pint                              170 g, $2.94/100g   
+Pineapple                                         1 ea, $2.88/1ea     
+Limes                                             1 ea, $0.89/1ea     
+Navel Orange                                      $4.39/1kg $1.99/1lb 
+Avocado                                           1 ea, $1.69/1ea     
+Royal Gala Apples                                 $5.49/1kg $2.49/1lb 
+Bartlett Pears                                    $6.59/1kg $2.99/1lb 
+Honeycrisp Apples                                 $4.14/1kg $1.88/1lb 
+Blackberries 1/2 Pint                             170 g, $1.69/100g   
+Raspberry Pint                                    340 g, $2.35/100g   
+Mandarin, 4 lb bag                                1.8 kg, $0.39/100g  
+Mango                                             1 ea, $1.55/1ea     
+Blueberries 1/2 pint                              170 g, $2.64/100g   
+Gala Apples, 4 lb bag                             1.81 kg, $0.28/100g 
+Kiwis                                             1 ea, $0.99/1ea     
+Granny Smith Apples                               $6.59/1kg $2.99/1lb 
+Ataulfo Mango                                     1 ea, $1.49/1ea     
+Ambrosia Apples                                   1.814 kg, $0.28/100g
+Ontario Greenhouse-Grown Strawberries             340 g, $1.76/100g   
+Mandarin Oranges, 2 lb bag                        907 g, $0.55/100g   
+Navel Oranges, 3 lb Bag                           1.36 kg, $0.43/100g 
+Pink Lady Apples                                  $4.14/1kg $1.88/1lb 
+Plantains, Single                                 $2.84/1kg $1.29/1lb 
+Mini Seedless Watermelon                          1 ea, $5.99/1ea     
+Lemons, 2 lb Bag                                  907 g, $0.55/100g   
+Papaya                                            $2.84/1kg $1.29/1lb 
+Golden Delicious Apples                           $5.49/1kg $2.49/1lb 
+Naturally Imperfect Avocados, 3 lb Bag            1.36 kg, $0.51/100g 
+Navel Oranges Cara Cara, 3 lb Bag                 1.36 kg, $0.51/100g 
+Red Delicious Apples                              $5.49/1kg $2.49/1lb 
+Clementine Stem & Leaf                            $8.80/1kg $3.99/1lb 
+Atemoya                                           1 ea, $4.99/1ea     
+Red Pummelos                                      1 ea, $2.99/1ea     
+Organic Raspberries 1/2 pint                      170 g, $2.94/100g   
+Red Grapefruit, 3 lb Bag                          1.36 kg, $0.44/100g 
+Sweet & Sour Tamarind                             500 g, $1.20/100g   
+Sugar Cane                                        1 ea, $2.99/1ea     
