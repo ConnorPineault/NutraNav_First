@@ -1,0 +1,352 @@
+Product Name                                      Price               
+======================================================================
+Salted Butter                                     454 g, $1.10/100g   
+Unsalted Butter                                   454 g, $1.10/100g   
+Margarine Original                                427 g, $1.29/100g   
+Margarine with Olive Oil                          427 g, $1.29/100g   
+Country Churned Unsalted Butter                   454 g, $1.76/100g   
+Country Churned Salted Butter                     454 g, $1.76/100g   
+Margarine Vegan                                   427 g, $1.29/100g   
+Salted Butter Sticks, 4 units                     4x113.0 g, $1.88/100g
+Margarine Spread                                  454 g, $1.00/100g   
+Blue Menu Margarine with Olive Oil                907 g, $0.72/100g   
+My Country Unsalted Butter Sticks, 4 units        4x113.5 g, $1.87/100g
+Margarine with Avocado Oil                        427 g, $1.29/100g   
+Spreadables Butter With Canola Oil                227 g, $2.64/100g   
+Margarine Club Pack                               1.275 kg, $0.71/100g
+Garlic & Provençal Herb Butter                    125 g, $3.43/100g   
+Blue Menu Original Margarine                      907 g, $0.72/100g   
+55% Vegetable Oil Margarine                       637 g, $1.10/100g   
+Calorie-Reduced Margarine Light                   850 g, $0.82/100g   
+Garlic Spread                                     250 g, $1.20/100g   
+Margarine Unsalted Plant-Based Sticks             454 g, $1.21/100g   
+Buttery Taste Margarine                           637 g, $1.10/100g   
+Margarine Salted Plant-Based Sticks               454 g, $1.21/100g   
+68% Vegetable Oil Margarine                       907 g, $0.66/100g   
+Butter Sticks, Salted                             454 g, $1.98/100g   
+Salted Butter Sticks with Sea Salt, 4 units       454 g, $1.87/100g   
+Plant Based Butter Alternative Salted             454 g, $1.10/100g   
+Plant Butter, Salted                              454 g, $0.99/100g   
+Spreadables Light Butter With Canola Oil          227 g, $2.64/100g   
+Plant Based Butter Alternative Unsalted           454 g, $1.10/100g   
+Soy Free Buttery Spread                           425 g, $1.41/100g   
+Margarine Salt Free                               850 g, $0.82/100g   
+Plant Butter, Unsalted                            454 g, $0.99/100g   
+Mirage Margarine                                  2.72 kg, $0.77/100g 
+Butter Garlic Parsley                             125 g, $3.19/100g   
+Dairy-Free Butter, Salted, Plant-Based            340 g, $1.61/100g   
+Original Spread                                   850 g, $0.88/100g   
+75% Vegetable Oil Margarine Squares               1.36 kg, $0.62/100g 
+Grass Fed Salted Butter                           250 g, $2.40/100g   
+Blue Menu Calorie Reduced Margarine               907 g, $0.72/100g   
+Crescents Original Dough, 8 Pieces                226 g, $0.88/100g   
+Butter Puff Pastry                                450 g, $1.33/100g   
+Chocolate Chip Cookie Dough, Ready to Bake        468 g, $1.02/100g   
+Country Biscuits, Ready to Bake Dough, 10 ct      340 g, $1.03/100g   
+Cinnamon Rolls with Icing, Ready to Bake 8 ct     351 g, $1.36/100g   
+Deep Dish Pie Shells                              380 g, $1.05/100g   
+Holiday Premium Edition Cookies                   396 g, $1.26/100g   
+Chub Chocolate Chunk Cookie                       468 g, $1.02/100g   
+Tart Shells                                       30 ea, $1.23/100g   
+Grands! Cinnamon Rolls with Icing, Cinnabon Cinnamon, 5 ct496 g, $1.11/100g   
+Pie Crusts, Refrigerated Pre-Made Dough           400 g, $0.87/100g   
+Chocolate Chip Cookie Dough, Ready to Bake, 24 ct 454 g, $1.21/100g   
+Crescents - Reduced Fat                           227 g, $0.88/100g   
+Pizza Crust, Refrigerated Pre-Made Dough, 1 ct    391 g, $0.89/100g   
+Phyllo Pastry                                     454 g, $1.43/100g   
+Wiener Wraps, Refrigerated Dough, Ready to Bake, 6 ct200 g, $1.00/100g   
+Grands! Cinnamon Rolls Flaky Supreme with Icing   468 g, $1.11/100g   
+Grands! Crescents, Croissant Rolls, Ready to Bake, 4 ct318 g, $1.10/100g   
+Pie Shells                                        350 g, $1.14/100g   
+Grands! Cinnamon Rolls with Cream Cheese Icing    496 g, $1.11/100g   
+Ready to Bake Cookie Dough Reese Peanut Butter    454 g, $1.21/100g   
+Easter Egg Cutout Sugar Cookie Dough, 10 Pre-Cut Sugar Cookies206 g, $2.42/100g   
+Chocolate Chip Cookie Dough                       468 g, $0.96/100g   
+Crescents Flaky Rolls                             340 g, $1.03/100g   
+Flaky Real Apple Turnovers                        383 g, $1.25/100g   
+Sugar Cookies                                     468 g, $1.02/100g   
+Grands ready to bake Chocolate Chunk & Chip       454 g, $1.21/100g   
+Raw Cookie Dough Chocolate Chunk                  400 g, $1.50/100g   
+Raw Cookie Dough Strawberry Confetti              400 g, $1.50/100g   
+Gluten Free Pie Crust                             380 g, $2.50/100g   
+Large Grade A Eggs                                12 ea, $0.32/1ea    
+Large Size Eggs                                   30 ea, $0.32/1ea    
+Grade A Large Eggs                                18 eggs, $0.40/1ea  
+Grade A Extra Large Eggs                          12 eggs, $0.38/1ea  
+Free Run Brown Eggs Large                         12 eggs, $0.59/1ea  
+Egg Whites                                        1 kg, $0.85/100g    
+Free Range Large Brown Eggs                       12 eggs, $0.65/1ea  
+Grade A Large Brown Eggs                          12 eggs, $0.52/1ea  
+Blue Menu Free Run Large White Eggs 12 Pack       12 ea, $0.62/1ea    
+Naturegg Nest Laid White Eggs, Large              12 eggs, $0.42/1ea  
+Naturegg Omega 3 White Eggs, Large                12 eggs, $0.52/1ea  
+Free-Range Large Brown Eggs, Club Pack (30 Count) 30 ea, $0.57/1ea    
+Free Run Egg Whites                               1 g, $1.10/100g     
+Extra Large Size Free-Range Brown Eggs            12 eggs, $0.67/1ea  
+Extra Large Free Run Brown Eggs                   12 eggs, $0.62/1ea  
+Nature's Best White Eggs, Large                   12 eggs, $0.47/1ea  
+Naturegg NestlaidOmega 3 Large Size 12 Eggs       12 ea, $4.99/1ea    
+Blue Menu Free Run Large Brown Eggs 12 Pack       12 eggs, $0.66/1ea  
+Grade A White Eggs, Large                         6 eggs, $0.54/1ea   
+Organic Free Range Eggs, 18 Eggs                  18 ea, $0.56/1ea    
+Naturegg Simply Egg Whites                        1 ea, $0.90/100ml   
+Super Bon-Ee Grade A White Eggs, Super Extra Large12 eggs, $0.47/1ea  
+Free Run Omega-3 Hard-Boiled Peeled Eggs, 3x2 packs3x88.0 g, $5.67/100g
+Eggs2go! 6 Hard Boiled Peeled Eggs                6 ea, $0.97/1ea     
+Naturegg Free Run Egg Whites                      1 eggs, $0.90/100g  
+Naturegg Free Run Omega 3 Eggs                    12 eggs, $0.65/1ea  
+Egg Creations, Original                           500 g, $1.16/100g   
+Scramble Kit, Protein Packed                      57 g, $7.88/100g    
+Egg Creations! Whole Eggs, Original               500 g, $1.16/100g   
+Naturegg Omega 3 White Eggs                       6 eggs, $0.67/1ea   
+Organic Free-Range Egg Whites                     500 g, $1.20/100g   
+Naturegg Free Run Eggs, Large                     6 eggs, $0.72/1ea   
+Super Bon-Ee Grade A Double Yolk White Eggs       12 eggs, $0.47/1ea  
+Naturegg Omega 3 Brown Eggs, Large                12 eggs, $0.60/1ea  
+Naturegg Omega Plus White Eggs, Large             12 eggs, $0.59/1ea  
+Naturegg Solar Free Range Eggs, Large             12 ea, $0.50/1ea    
+Scramble Kit, Classic                             79 g, $5.68/100g    
+Brown Eggs Free Range Farm Large                  12 ea, $0.67/1ea    
+Scramble Kit, Ultimate                            85 g, $5.28/100g    
+Naturegg Omega Plus Solar Free Range Eggs, Large  12 ea, $0.50/1ea    
+Lactose Free 2% Dairy Product                     2 l, $0.32/100ml    
+Lactose Free 2% Partly Skimmed Ultrafiltered Milk 1.5 l, $0.47/100ml  
+Chocolate Lactose Free 2% Partly Skimmed Ultrafiltered Milk1.5 l, $0.47/100ml  
+Lactose Free Marble Cheddar                       400 g, $1.62/100g   
+Lactose Free 1% Dairy Product                     2 l, $0.32/100ml    
+Trutaste Lactose Free 2% Milk                     1 l, $0.46/100ml    
+Lactose Free Skim Ultrafiltered Milk              1.5 l, $0.47/100ml  
+Nano Drinkable Yogurt, Lactose Free, Strawberry-Banana 1%6x93.0 ml, $1.07/100g
+Milk 1% Bottle                                    1.5 l, $0.47/100ml  
+Lactose Free 14% M.F. Sour Cream                  500 ml, $0.86/100ml 
+Yogurt with Probiotics, Lactose-free, Vanilla Flavour650 g, $0.69/100g   
+Lactose Free Triple Cheddar Shredded Cheese Blend 320 g, $1.53/100g   
+Lactose Free Pizza Mozzarella Shredded Cheese     320 g, $1.53/100g   
+Cheestrings Marble Lactose-Free Cheese, 12 units  252 g, $2.77/100g   
+Lactose Free Whole Ultrafiltered Milk             1.5 l, $0.47/100ml  
+Trutaste Lactose Free 1% Milk                     4 l, $0.27/100ml    
+Yogurt With Probiotics Lactose Free, Vanilla, Strawberry, Raspberry, Cherry Flavour12x100.0 g, $0.58/100g
+Lactose Free 2% M.F. Cottage Cheese               500 g, $1.10/100g   
+Yogurt With Probiotics Lactose Free, Strawberry, Blueberry, Peach, Mango Flavour, 12XG12x100.0 g, $0.58/100g
+Lactose Free Old Yellow Cheddar Cheese            400 g, $1.62/100g   
+Lactose Free Homogenized Milk                     2 l, $0.32/100ml    
+Lactose Free Fat Free Skim 0% Dairy Product (2L)  2 l, $0.32/100ml    
+Nano Drinkable Yogurt, Lactose Free, Apple-Grape 1%6x93.0 ml, $1.07/100ml
+Greek 0% Lactose Free Yogurt, Vanilla, High Protein750 g, $0.93/100g   
+TruTaste Lactose Free 2% Milk                     4 l, $0.27/100ml    
+Trutaste Lactose Free Cream Half & Half 10% M.F.  1 l, $0.35/100ml    
+Lactose Free Plain Cream Cheese                   250 g, $1.72/100g   
+Naturally Lactose-Free Swiss Cheese               300 g, $2.16/100g   
+Lactose Free Sour Cream                           450 ml, $0.95/100ml 
+Trutaste No Lactose 3.25% Milk                    2 l, $0.35/100ml    
+Tre Stelle Creamy Cheese Spread, Lactose Free     200 g, $2.50/100g   
+Lactose Free Plain 2% M.F. Yogurt                 750 g, $0.47/100g   
+10% Lactose Free Coffee Cream (1L)                1 l, $0.60/100ml    
+Trutaste Lactose Free Skim Milk                   1 l, $0.46/100ml    
+Lactose Free Old White Cheddar Cheese             400 g, $1.62/100g   
+Lactose Free Cottage Cheese                       450 g, $1.22/100g   
+Lactose Free Salted Butter                        250 g, $3.00/100g   
+Trutaste Homogenized Milk Lactose Free 3.25% M.F. 4 l, $0.27/100ml    
+Trutaste Chocolate Partly Skimmed Milk 1% M.F.    2 l, $0.36/100ml    
+Milk, Ultrafiltered Partly Skimmed 2% M.F.        1 l, $0.45/100ml    
+Cheestrings Mozzarella Lactose-Free Cheese, 12 units252 g, $2.77/100g   
+Ultrafiltered Skim Milk 0% M.F.                   1 l, $0.45/100ml    
+Chocolate Dairy Beverage 2% M.F.                  1 l, $0.45/100ml    
+Original Cream Cheese, Lactose Free               250 g, $2.60/100g   
+Lactose-Free Unsalted Butter                      250 g, $3.00/100g   
+Partly Skimmed Milk 2% MF                         4 l, $0.15/100ml    
+Trutaste Partially Skimmed Milk 2 percent MF      4 l, $0.17/100ml    
+Half and Half Cream                               473 ml, $0.80/100ml 
+Partly Skimmed Milk 1% MF                         4 l, $0.15/100ml    
+Homogenized Milk 3.25%                            1 l, $0.37/100ml    
+TruTaste 1% Milk                                  2 l, $0.27/100ml    
+True Taste, 2% Milk                               2 l, $0.27/100ml    
+Whipping Cream                                    473 ml, $0.74/100ml 
+Real Whipped Cream, Regular                       225 g, $2.22/100g   
+Almond For Coffee, Vanilla Flavour, Plant Based Dairy Free Coffee Creamer890 ml, $0.59/100ml 
+Trutaste Light Cream                              1 l, $0.35/100ml    
+French Vanilla Flavoured Coffee Creamer, 63 Servings946 ml, $0.79/100ml 
+Oat For Coffee, Vanilla, Plant Based, Dairy Free Coffee Creamer890 ml, $0.59/100ml 
+2% Milk                                           2 l, $0.26/100ml    
+Table Cream                                       1 l, $0.72/100ml    
+Hazelnut Flavoured Coffee Creamer, 63 Servings    946 ml, $0.79/100ml 
+Flavoured Milk, Chocolate                         473 ml, $0.55/100ml 
+Skim Milk                                         4 l, $0.15/100ml    
+For Coffee, Hazelnut Flavour, Dairy Free Coffee Creamer473 ml, $0.59/100ml 
+Caramel Waffle Cookie Coffee Enhancer, Limited Edition946 ml, $0.79/100ml 
+Organic 2% Milk                                   1 l, $0.47/100ml    
+Milk Lactose Free 1% Partly Skimmed               2 l, $0.31/100ml    
+Organic Homogenized Milk                          1 l, $0.47/100ml    
+Chocolate Milk                                    237 ml, $0.88/100ml 
+COFFEE-MATE Original Powder                       450 g, $1.78/100g   
+Coffee Mate Liquid Hazelnut                       946 ml, $0.74/100ml 
+Coffee Whitener                                   450 g, $1.22/100g   
+Coffee Mate Double Double-Mate Liquid Coffee Enhancer Value Size1.89 l, $0.53/100ml 
+Homogenized Milk                                  2 l, $0.26/100ml    
+Goat Milk 3.25% M.F                               1 l, $0.60/100ml    
+Fine-filtered 10% Half & Half Cream               1 l, $0.53/100ml    
+Grass Fed 2% Milk                                 2 l, $0.34/100ml    
+Original Brick Cream Cheese                       250 g, $2.20/100g   
+Original Cream Cheese Product                     340 g, $2.35/100g   
+Pasteurized Cream Cheese                          250 g, $1.00/100g   
+Cheestrings Marble Cheese, 16 units               336 g, $2.08/100g   
+Farmer's Marble Cheese                            400 g, $1.50/100g   
+Singles Original Slices                           410 g, $1.46/100g   
+Triple Cheddar Shredded Cheese Blend              320 g, $1.53/100g   
+Marble Cheddar Cheese Slices                      240 g, $2.70/100g   
+Processed cheddar cheese slices, 22 units         410 g, $1.34/100g   
+Cottage Cheese, 2% M.F.                           500 g, $0.96/100g   
+Old Cheddar Cheese                                400 g, $1.50/100g   
+Pizza Mozzarella Shredded Cheese                  320 g, $1.53/100g   
+Mozzarellissima                                   500 g, $2.00/100g   
+Shredded Mozzarella                               320 g, $1.87/100g   
+Herb & Garlic Cream Cheese Product                227 g, $2.42/100g   
+Pizza Mozzarella Cheese, 28% MF                   700 g, $1.43/100g   
+Pizza Mozzarella Cheese with 28% M.F.             400 g, $1.50/100g   
+Marble Cheese                                     400 g, $1.22/100g   
+Grated Cheese Parmesan 31% M.F.                   250 g, $4.00/100g   
+Tex Mex Shredded Cheese Blend                     320 g, $1.53/100g   
+Extra Old White Cheddar                           400 g, $1.62/100g   
+Cheddar Cheese Coloured Old                       400 g, $1.22/100g   
+Swiss Cheese Slices                               210 g, $2.14/100g   
+Marble cheddar cheese                             400 g, $2.00/100g   
+Whipped Original Cream Cheese Product             227 g, $2.42/100g   
+Shredded Nacho Cheese Blend                       320 g, $1.87/100g   
+Mozzarella and cheddar cheese stix, 22% M.F, 12 units228 g, $2.85/100g   
+Medium Cheddar Cheese Slices                      230 g, $1.95/100g   
+Medium Cheddar Cheese Slices, 12 units            240 g, $2.70/100g   
+Singles Original Thick Slices                     410 g, $1.46/100g   
+Parmesan Shredded Cheese                          250 g, $1.95/100g   
+Nordica Cottage Cheese, 2%                        500 g, $0.90/100g   
+Old Cheddar Cheese Slices                         210 g, $2.14/100g   
+Tex Mex Shredded Cheese                           320 g, $2.50/100g   
+Shredded Mozzarella Cheese                        900 g, $1.67/100g   
+Shredded Farmer's Marble Cheese                   320 g, $1.87/100g   
+Grated Cheese, 100% Parmesan                      200 g, $3.75/100g   
+Herb & Garlic Cheddar Cheese Slices, 11 units     200 g, $3.25/100g   
+Mozzarella Cheese Slices, 12 units                240 g, $2.70/100g   
+Portion Snack Marble Cheddar Cheese, 8 units      168 g, $3.86/100g   
+Lactose Free Marble Cheddar Cheese Slices         210 g, $2.14/100g   
+Cheestring, with Probiotics, Marble Cheese, 12 units252 g, $2.77/100g   
+Sour Cream 14%                                    500 ml, $0.76/100ml 
+Sour Cream, Regular 14%                           250 ml, $1.40/100ml 
+5% M.F. Light Sour Cream                          500 ml, $0.76/100ml 
+Sour Cream Dip, French Onion                      680 g, $1.10/100g   
+14% M.F. Regular Sour Cream                       250 ml, $1.20/100ml 
+Cheez Whiz Cheese Spread                          450 g, $1.44/100g   
+Light 5% M.F. Sour Cream                          250 ml, $1.20/100ml 
+Sour Cream, Low Fat 3%                            500 ml, $0.86/100ml 
+Onion Dip                                         340 g, $2.35/100g   
+1% M.F. Fat Free Sour Cream                       500 ml, $0.76/100ml 
+Sour Cream Dip, Dill Pickle                       250 g, $1.60/100g   
+Dill Pickle Dip                                   340 g, $2.35/100g   
+Gold Sour Cream 18%                               425 ml, $1.06/100ml 
+Plant Based Sour Cream Alternative                340 ml, $1.03/100ml 
+Jalapeno Cheddar Dip                              250 g, $1.60/100g   
+Caramelized Onion Dip                             250 g, $1.60/100g   
+Herb & Spice Dip                                  227 g, $2.42/100g   
+French Onion Dip                                  227 g, $2.42/100g   
+Sour Cream, Fat Free 1%                           500 ml, $0.86/100ml 
+14% Sour Cream                                    500 ml, $0.86/100ml 
+French Onion Sour Cream Dip                       250 g, $1.60/100g   
+Good! Sour Cream Dip Herb & Spice                 250 g, $1.60/100g   
+Dill Pickle Sour Cream Dip                        250 g, $1.60/100g   
+Herb & Garlic Dip                                 227 g, $2.42/100g   
+French Onion Greek Yogurt Dip                     227 g, $1.76/100g   
+Crème Fraiche                                     2x120.0 ml, $2.50/100ml
+5% Light Sour Cream                               500 ml, $0.86/100ml 
+Fat Free Sour Cream                               500 ml, $0.86/100ml 
+Sour Cream                                        2x120.0 ml, $2.50/100ml
+Herb and Spice Sour Cream Dip                     250 g, $1.60/100g   
+Everything Bagel Seasoning Sour Cream Dip         250 g, $1.60/100g   
+Jalapeno Greek Yogurt Dip                         227 g, $1.76/100g   
+Plain Yogurt 6%, Balkan Style                     750 g, $0.64/100g   
+Yogurt With Probiotics, Vanilla Flavour           8x100.0 g, $0.62/100g
+Nano Drinkable Yogurt, Strawberry 1%              6x93.0 ml, $1.07/100ml
+0% MF Greek Yogurt, Plain, Club Size              1 kg, $0.80/100g    
+Greek Yogurt, Key Lime Flavour, 2% M.F., Blended  4x100.0 g, $1.20/100g
+Plain Greek Yogurt 0%                             750 g, $0.80/100g   
+Greek Yogurt, Vanilla Flavour, 2% M.F., Blended   4x100.0 g, $1.20/100g
+Greek Yogurt, Banana Flavour, Blended, 2% Mf, 4X100G4x100.0 g, $1.20/100g
+Yogurt 1.5% M.F. Variety Pack - Strawberry,Raspberry, Blueberry & Vanilla16x100.0 g, $0.56/100g
+Probiotic Yogurt, Strawberry/Blueberry/Raspberry/Peach Flavour12x100.0 g, $0.58/100g
+Greek Yogurt, Strawberry Flavour, Fruit On The Bottom, 2% M.F.4x100.0 g, $1.20/100g
+Plain Greek Yogurt Club Size 2% M.F.              1 kg, $0.80/100g    
+Nano Drinkable Yogurt, Vanilla 1%                 6x93.0 ml, $1.07/100ml
+Yop 1% Drinkable Yogurt, Strawberry, Yogurt Drink 200 ml, $0.75/100ml 
+Fat Free Greek Yogurt, Peach-Mango Flavour, Fruit On The Bottom, 0% M.F.4x100.0 g, $1.20/100g
+Yop 1% Drinkable Yogurt, Strawberry Banana, Yogurt Drink200 ml, $0.75/100ml 
+Greek 0% Yogurt, Plain, High Protein              750 g, $0.93/100g   
+Greek Yogurt, Raspberry-Pomegramate Flavour, Fruit On Bottom, 2% M.F.,4x100.0 g, $1.20/100g
+Tubes Zoo, Strawberry                             448 g, $1.23/100g   
+Greek Yogurt, Blueberry Flavour, Fruit On The Bottom, 2% M.F.4x100.0 g, $1.20/100g
+Fat Free Greek Yogurt, High Protein, Plain, 0% M.F.650 g, $1.08/100g   
+Skyr Yogurt Plain 0%. High Protein                750 g, $1.00/100g   
+Source 0% Smooth Traditional Yogurt, Vanilla, No Added Sugar630 g, $0.87/100g   
+Yop 1% Drinkable Yogurt, Vanilla, Yogurt Drink    200 ml, $0.75/100ml 
+Greek Yogurt Plain Flavour 2%                     750 g, $0.80/100g   
+Yogurt With Probiotics, Strawberry Flavour        650 g, $0.69/100g   
+Nano Drinkable Yogurt, Peach 1%                   6x93.0 ml, $1.07/100ml
+Nano Drinkable Yogurt, Raspberry 1%               6x93.0 ml, $1.07/100ml
+Nano Drinkable Yogurt, Banana 1%                  6x93.0 ml, $1.07/100ml
+Tubes Yogurt 1% M.F. Strawberry Banana & Fruit Punch448 g, $1.23/100g   
+Yop 1% Drinkable Yogurt, Peach, Yogurt Drink      200 ml, $0.75/100ml 
+Fat Free Greek Yogurt, Cherry Flavour, Fruit On The Bottom, 0% M.F.4x100.0 g, $1.20/100g
+Yogurt With Probiotics, Raspberry Flavour         650 g, $0.69/100g   
+Yogurt With Probiotics, Cherry Flavour            650 g, $0.69/100g   
+Yop 1% Drinkable Yogurt, Raspberry, Yogurt Drink  200 ml, $0.75/100ml 
+Fat Free Greek Yogurt, Plain, No Added Sugar Value Tub750 g, $0.93/100g   
+Danino Strawberry-Banana Flavoured Paw Patrol Yogurt Drink for Kids, 6x93ml558 ml, $0.72/100ml 
+Yogurt With Probiotics, Blueberry Flavour         650 g, $0.69/100g   
+Yop 3% Minigo Duo, Variety Pack, Kids Snack       6x60.0 g, $1.53/100g
+Yogurt With Probiotics, Peach Flavour Tub         650 g, $0.69/100g   
+Greek 2% Yogurt, Plain, High Protein              750 g, $0.93/100g   
+Yop 1% Drinkable Yogurt, Blueberry, Yogurt Drink  200 ml, $0.75/100ml 
+Méditerranée 9% Yogurt, Black Cherry              500 g, $0.90/100g   
+Greek Yogurt, Strawberry-Banana Flavour, Blended, 2% M.F.4x100.0 g, $1.20/100g
+Yogurt With Probiotics Lemon Flavour              650 g, $0.69/100g   
+Yop 1% Drinkable Yogurt Pack, Strawberry, Blueberry, Raspberry, and Strawberry Banana, Yogurt Drinks12x200.0 ml, $0.54/100ml
+Oat Beverage, Original                            946 ml, $0.26/100ml 
+Almond Beverage, Unsweetened Original, Dairy-Free 6x946.0 ml, $0.22/100g
+Almond Beverage, Unsweetened Original             1.89 l, $0.24/100ml 
+Organic Soy Beverage, Unsweetened Original, Dairy-Free1.89 l, $0.25/100ml 
+Almond Beverage, Unsweetened, Vanilla Flavour, Dairy-Free1.89 l, $0.25/100ml 
+Almond Beverage, Original, Plant Based Dairy-Free Milk1.89 l, $0.25/100ml 
+Oat Beverage, Vanilla                             946 ml, $0.26/100ml 
+Coconut Beverage, Unsweetened Original, Dairy-Free1.89 l, $0.25/100ml 
+Oat Beverage, Unsweetened, Plant Based, Dairy Free1.75 l, $0.27/100ml 
+Almond Beverage, Dark Chocolate Flavour           1.89 l, $0.25/100ml 
+Almond Beverage, Unsweetened Vanilla              946 ml, $0.32/100ml 
+Oat Zero Sugar Beverage                           1.75 l, $0.26/100ml 
+Oat Barista                                       946 ml, $0.58/100ml 
+Organic Soy Beverage, Original, Dairy-Free        1.89 l, $0.25/100ml 
+Almond Beverage, Vanilla Flavour, Dairy-Free, L   1.89 l, $0.25/100ml 
+Creamy Cashew Beverage, Unsweetened Original, Dairy-Free1.89 l, $0.25/100ml 
+Almond Beverage, Original                         1.89 l, $0.24/100ml 
+Dairy Free Plant Based Oat Beverage, Original, Plain1.75 l, $0.27/100ml 
+Organic Almond Beverage Unsweetened Original      1.75 l, $0.26/100ml 
+Almond Beverage, Vanilla                          1.89 l, $0.24/100ml 
+Almond Beverage, Chocolate                        1.89 l, $0.24/100ml 
+Almond Beverage, Unsweetened, Dairy-Free, Shelf Stable946 ml, $0.35/100ml 
+Almond Breeze Natural Almond, Unsweetened         946 ml, $0.37/100ml 
+Fortified Gluten-Free Oat Beverage Zero Sugar Unsweetened Vanilla1.75 l, $0.26/100ml 
+Coconut Beverage, Original, Plant Based Dairy-Free Milk1.89 l, $0.25/100ml 
+Almond Breeze Unsweetened Almond Milk, Original   1.89 l, $0.23/100ml 
+Almond Coconut Blend Beverage, Unsweetened, Dairy-Free1.89 l, $0.25/100ml 
+Protein Almond & Cashew Beverage, Unsweetened Original L1.75 l, $0.31/100ml 
+Creamy Cashew Beverage, Unsweetened, Vanilla Flavour1.89 l, $0.25/100ml 
+Nextmilk, Plant Based Dairy Free Milk Alternative 1.74 l, $0.32/100ml 
+Soy Barista                                       946 ml, $0.37/100ml 
+Unsweetened Enrich                                946 ml, $0.40/100ml 
+Organic Soy Beverage, Vanilla Flavour, Dairy-Free 1.89 l, $0.25/100ml 
+Organic Almond Beverage, Unsweetened Vanilla      1.75 l, $0.26/100ml 
+Almond Breeze Almond Milk, Unsweetened Vanilla    1.89 l, $0.23/100ml 
+Almond Beverage, Unsweetened, Vanilla Flavour, Dairy-Free, Shelf Stable946 ml, $0.35/100ml 
+Almond Breeze, Unsweetened Vanilla                946 ml, $0.37/100ml 
+Soy Beverage, Chocolate Flavour, Dairy-Free       1.89 l, $0.25/100ml 
+Oat Zero Sugar Beverage Original                  946 ml, $0.26/100ml 
+Natur-A Rice Original                             946 ml, $0.37/100ml 
+Organic Soy Beverage, Unsweetened Original, Dairy-Free, Shelf Stable946 ml, $0.35/100ml 
+Organic Soy Beverage, Enriched Vanilla            946 ml, $0.40/100ml 
+Barista Oat Drink, Original                       946 ml, $0.58/100ml 
+Oat Creamer French Vanilla                        473 ml, $1.48/100ml 
