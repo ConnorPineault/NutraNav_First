@@ -1,0 +1,169 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333; /* Default text color */
+}
+
+/* Main Content Styling */
+#main-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(133, 203, 250);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* User Info Section Styling */
+#user-info {
+    background-color: #e7f3fe; /* Light baby blue background */
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px; /* Increased margin for visual separation */
+    text-align: center; /* Center align the user info content */
+}
+
+#user-info h1 {
+    color: #54a5fc; /* NutraNav's theme blue for headings */
+    margin-bottom: 10px;
+}
+
+#clock-container p {
+    color: #555;
+    font-size: 1.2rem; /* Slightly larger font for the clock */
+    font-weight: bold; /* Make the clock time bold */
+}
+
+#progress-container p {
+    color: #555;
+    font-size: 0.9rem; /* Consistent font sizing for progress text */
+    margin-bottom: 5px; /* Space between text and bar */
+}
+
+#progress-bar-background {
+    background-color: #e0e0e0; /* Light grey background for progress bar */
+    border-radius: 20px; /* Rounded corners for progress bar background */
+    padding: 3px;
+}
+
+#progress-bar-fill {
+    height: 20px;
+    background-color: #4caf50; /* Green color for the fill */
+    border-radius: 15px; /* Rounded corners for progress bar fill */
+    text-align: center;
+    line-height: 20px; /* Align the text vertically */
+    color: #4caf50; /* White text for the percentage inside the fill */
+}
+
+#progress-bar-fill::after {
+    content: attr(style); /* This will display the width percentage as text */
+    display: block; /* Make it a block to fill the progress bar */
+    font-size: 0.9rem; /* Font size for the percentage text */
+}
+
+
+
+/* Meal Card Styles */
+.meal-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.meal-card:hover {
+    transform: translateY(-5px); /* Slight raise effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover for depth */
+}
+
+.meal-card img {
+    width: 60%;
+    height: 500px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd; /* Separate image from text content */
+}
+
+.meal-card h3 {
+    font-size: 1.1rem;
+    color: #6aaef7; /* Theme color for meal names */
+    padding: 10px 15px; /* Padding for breathing room */
+    background-color: #f9f9f9; /* Slight grey background for name */
+    margin: 0; /* Remove default margins */
+}
+
+.meal-card p {
+    padding: 0 15px 10px; /* Padding for content */
+    font-size: 1.2rem;
+}
+
+.meal-card button {
+    display: block;
+    width: 100%;
+    padding:10px 0;
+    background-color: #4fa1f8; /* Theme blue for buttons /
+    color: white;
+    border: none;
+    border-top: 1px solid #ddd; / Separation line between button and meal content /
+    border-radius: 0 0 8px 8px; / Rounded corners at the bottom of the card */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+
+    #next-meal {
+        background-color: #e7f3fe; /* Light baby blue background */
+        color: #333333;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 30px; /* Increased margin for visual separation */
+        text-align: center; /* Center align the user info content */
+    }
+
+    #today-progress {
+        background-color: #e7f3fe; /* Light baby blue background */
+        color: #333333;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 30px; /* Increased margin for visual separation */
+        text-align: center; /* Center align the user info content */
+    }
+
+    #snacks {
+        background-color: #e7f3fe; /* Light baby blue background */
+        color: #333333;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 30px; /* Increased margin for visual separation */
+        text-align: center; /* Center align the user info content */
+    }
+
+    #cooking-guide {
+        background-color: #e7f3fe; /* Light baby blue background */
+        color: #333333;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 30px; /* Increased margin for visual separation */
+        text-align: center; /* Center align the user info content */
+    }
+    #meal-carousel {
+        background-color: #e7f3fe; /* Light baby blue background */
+        color: #333333;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 30px; /* Increased margin for visual separation */
+        text-align: center; /* Center align the user info content */
+    }
+
+
+

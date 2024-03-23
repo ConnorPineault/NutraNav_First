@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutraNav</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Splash Screen Container -->
+    <div id="splash-screen">
+        <h1>NUTRANAV</h1>
+    </div>
+    
+ <!-- Navigation Bar -->
+ <nav id="navbar">
+    <a href="index.html?skipSplash=true" class="logo">
+        <img src="pictures/nutranav.png" alt="NutraNav Logo">
+    </a>
+
+    <div class="nav-links">
+        <a href="search-groceries.html" class="nav-link">Search Groceries</a>
+        <a href="meal-planning.html" class="nav-link">Meal Planning</a>
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="basket.html" class="nav-link">Basket</a>
+        <a href="pantry.html" class="nav-link">Pantry</a>
+        <a href="health.html" class="nav-link">Health</a>
+        <a href="social-feed.html" class="nav-link">Social Feed</a>
+    </div>
+
+    <div class="auth-links">
+        <!-- Update these links as necessary for your authentication flow -->
+        <a href="account.html" class="nav-link">Account</a>
+        <a href="login.html" class="auth-link">Login</a>
+        <a href="signup.html" class="auth-link">Sign Up</a>
+        <button id="logoutButton" class="logout-btn">Logout</button>
+
+    </div>
+</nav>
+
+<!-- Makes Users Have To Be Logged In In Order To Get Access To The Main Features -->
+
+    
+
+
+<!-- Logout Button -->
+<script>
+    document.getElementById('logoutButton').addEventListener('click', function(e) {
+        fetch('http://localhost:3000/api/logout', {
+            method: 'POST',
+            credentials: 'include' // Needed to include the session cookie in the request
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.text();
+            }
+            throw new Error('Logout failed');
+        })
+        .then(data => {
+            alert('Logout successful!');
+            window.location.href = 'Index.html'; // Redirect to the login page
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+    </script>
+    
+
+
+
+<!-- Main Content Area -->
+<div id="main-content">
+    <!-- Home Page Content -->
+    <section id="home" class="content-section">
+        <h1>Welcome to NutraNav</h1>
+        <p>Redefine Your Grocery Game: Eat Smart, Save Big, Live Well</p>
+        <button class="cta-button" onclick="window.location.href='signup.html';">Start Your Journey</button>
+        <div class="explore-arrow" onclick="scrollToNextSection()">
+            &#x2193; <!-- Downward arrow -->
+        </div>
+    </section>
+
+<!-- Inside <div id="main-content"> after the #home section -->
+    <section id="search-groceries" class="content-section">
+        <h2>Search Groceries</h2>
+        <p>Find the best deals on your grocery essentials.</p>
+        <!-- Simple Search Form -->
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search for groceries...">
+            <button type="submit">Search</button>
+        </form>
+        <!-- Results Placeholder -->
+        <div id="search-results"></div>
+    </section>
+   
+   <script>
+        const placeholders = [
+            "Search for bread...",
+            "Search for milk...",
+            "Search for eggs...",
+            "Find the best deals on fruits...",
+            "Compare vegetable prices..."
+        ];
+        const input = document.getElementById('search-input');
+        let index = 0;
+    
+        setInterval(() => {
+            input.placeholder = placeholders[index];
+            index = (index + 1) % placeholders.length;
+        }, 3000); // Change every 3 seconds
+    </script>
+    
+
+ <!-- MEAL PLANNING -->
+ <section id="meal-planning" class="content-section">
+    <div class="meal-planning-intro">
+        <h2>Custom Meals For You</h2>
+        <p>Discover personalized meal plans integrated with your grocery list to reduce waste and save money.</p>
+    </div>
+    <div class="meal-cards-slider">
+        <div class="meal-card">
+            <img src="pictures/Oatmeal.png" alt="Morning Oatmeal" class="meal-image">
+            <div class="meal-info">
+                <h3>Morning Oatmeal</h3>
+                <p>Cook Time: less than10 min</p>
+                <p>Difficulty: Easy</p>
+                <p>Calories: 350 kcal</p>
+            </div>
+        </div>
+        
+        <div class="meal-card">
+            <img src="pictures/sandwhich.png" alt="Ham Sandwhich" class="meal-image">
+            <div class="meal-info">
+                <h3>Ham Sandwhich</h3>
+                <p>Prep Time: 10 min</p>
+                <p>Difficulty: Easy</p>
+                <p>Calories: 550 kcal</p>
+            </div>
+        </div>
+
+        <div class="meal-card">
+            <img src="pictures/steak.png" alt="Steak Dinner" class="meal-image">
+            <div class="meal-info">
+                <h3>Steak Dinner</h3>
+                <p>Cook Time: 45 min</p>
+                <p>Difficulty: Medium</p>
+                <p>Calories: 800 kcal</p>
+            </div>  
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let currentImgIndex = 0;
+        const images = document.querySelectorAll('.meal-image');
+        const totalImages = images.length;
+    
+        // Function to update the active image
+        function updateActiveImage() {
+            images.forEach((img, index) => {
+                img.classList.remove('active');
+                if (index === currentImgIndex) {
+                    img.classList.add('active');
+                }
+            });
+        }
+    
+        // Function to transition to the next image
+        function nextImage() {
+            currentImgIndex = (currentImgIndex + 1) % totalImages;
+            updateActiveImage();
+        }
+    
+        // Initialize the first image as active
+        updateActiveImage();
+    
+        // Change image every 3 seconds
+        setInterval(nextImage, 3000);
+    });
+    </script>
+    
+
+  <!-- Basket -->
+
+
+  <section id="basket" class="content-section">
+    <h2>Basket</h2>
+    <p>The Final Ingredient: Your Approval. Review and Place Your Grocery Order.</p>
+  
+    <div id="item-search">
+        <input type="text" id="search-item" placeholder="Search for an item..." />
+        <button onclick="searchAndAddItem()">Add Item</button>
+    </div>
+    
+
+    <table id="grocery-list">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Total</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example items will be populated by JavaScript -->
+        </tbody>
+   
+    </table>
+    <div class="totals">
+        <p>Total Price: $<span id="total-price">0.00</span></p>
+        <p>Total Saved: $<span id="total-saved">0.00</span></p>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initial items based on the meals
+        const items = [
+            { name: "Oats", quantity: 1, price: 3.5 },
+            { name: "Milk", quantity: 1, price: 2.0 },
+            { name: "Honey", quantity: 1, price: 5.0 },
+            { name: "Ham", quantity: 1, price: 4.0 },
+            { name: "Bread", quantity: 2, price: 2.5 },
+            { name: "Steak", quantity: 1, price: 10.0 },
+            { name: "Potatoes", quantity: 3, price: 0.5 },
+            { name: "Asparagus", quantity: 1, price: 4.0 },
+        ];
+    
+   // Define possibleItems array with additional items that can be searched and added
+   const possibleItems = [
+    { name: "Cheese", price: 2.5 },
+    { name: "Tomatoes", price: 1.5 },
+    { name: "Lettuce", price: 1.0 },
+    { name: "Apples", price: 2.0 },
+    { name: "Bananas", price: 1.8 },
+    { name: "Bread", price: 2.5 },
+    { name: "Milk", price: 3.0 },
+    { name: "Eggs", price: 2.4 },
+    { name: "Chicken Breast", price: 5.0 },
+    { name: "Ground Beef", price: 5.5 },
+    { name: "Rice", price: 1.5 },
+    { name: "Pasta", price: 1.2 },
+    { name: "Cereal", price: 3.5 },
+    { name: "Yogurt", price: 4.0 },
+    { name: "Butter", price: 2.5 },
+    { name: "Garlic", price: 0.5 },
+    { name: "Onions", price: 1.0 },
+    { name: "Carrots", price: 1.5 },
+    { name: "Potatoes", price: 2.0 },
+    { name: "Oranges", price: 3.0 }
+];
+
+
+        const listElement = document.getElementById('grocery-list').querySelector('tbody');
+        const totalPriceElement = document.getElementById('total-price');
+        const totalSavedElement = document.getElementById('total-saved');
+    
+        function updateList() {
+            listElement.innerHTML = ''; // Clear list
+            let total = 0;
+            let saved = 0; // Assume some savings calculation here
+    
+            items.forEach((item, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.name}</td>
+                    <td><input type="number" value="${item.quantity}" class="quantity-input" onchange="updateQuantity(${index}, this.value)" /></td>
+                    <td>$${item.price.toFixed(2)}</td>
+                    <td>$${(item.quantity * item.price).toFixed(2)}</td>
+                    <td><button onclick="removeItem(${index})">Remove</button></td>
+                `;
+                listElement.appendChild(row);
+                total += item.quantity * item.price;
+            });
+    
+            totalPriceElement.textContent = total.toFixed(2);
+            totalSavedElement.textContent = saved.toFixed(2); // Update with actual saved value
+        }
+    
+        window.updateQuantity = function(index, quantity) {
+            items[index].quantity = parseInt(quantity, 10) || 0;
+            updateList();
+        };
+    
+        window.removeItem = function(index) {
+            items.splice(index, 1);
+            updateList();
+        };
+    
+
+
+        window.searchAndAddItem = function() {
+        const searchInput = document.getElementById('search-item');
+        const itemName = searchInput.value.trim();
+        const item = possibleItems.find(i => i.name.toLowerCase() === itemName.toLowerCase());
+
+        if (item) {
+            const existingItem = items.find(i => i.name === item.name);
+            if (existingItem) {
+                existingItem.quantity++;
+            } else {
+                items.push({ ...item, quantity: 1 });
+            }
+            updateList();
+        } else {
+            alert("Item not found. Please try another.");
+        }
+        searchInput.value = ''; // Clear the search field
+    };
+
+    // Initial call to populate the list
+    updateList();
+});
+</script>
+
+
+<section id="inventory-management" class="content-section">
+    <div class="inventory-header">
+        <h2>Smart Inventory Management</h2>
+        <p>Effortlessly keep track of your groceries in the app. Every purchase, digitally organized in your fridge and pantry.</p>
+    </div>
+    <div class="inventory-body">
+        <div class="fridge-section inventory-part">
+            <div class="fridge-image"></div>
+            <h3>Fridge</h3>
+            <ul class="fridge-items inventory-items">
+                <!-- Fridge items listed alphabetically -->
+            </ul>
+        </div>
+        <div class="pantry-section inventory-part">
+            <div class="pantry-image"></div>
+            <h3>Pantry</h3>
+            <ul class="pantry-items inventory-items">
+                <!-- Pantry items listed alphabetically -->
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="health" class="content-section">
+    <h2>Health Features</h2>
+    <p>Empower your wellness journey with comprehensive health tracking</p>
+    <div class="health-features-grid">
+        <div class="health-feature-card">
+            <img src="calorie-counter-icon.png" alt="Calorie Counter">
+            <h3>Calorie Counter</h3>
+            <p>Monitor your calorie intake with ease, ensuring you stay on track with your health goals.</p>
+        </div>
+        <div class="health-feature-card">
+            <img src="nutrition-tracker-icon.png" alt="Nutrition Tracker">
+            <h3>Nutrition Tracker</h3>
+            <p>Keep tabs on your nutritional intake for a balanced diet.</p>
+        </div>
+        <div class="health-feature-card">
+            <img src="hydration-tracker-icon.png" alt="Hydration Tracker">
+            <h3>Hydration Tracker</h3>
+            <p>Stay hydrated by tracking your daily water intake for optimal health.</p>
+        </div>
+        <div class="health-feature-card">
+            <img src="activity-tracker-icon.png" alt="Activity Tracker">
+            <h3>Activity Tracker</h3>
+            <p>Record and analyze your physical activities to maintain a healthy lifestyle.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="social-feed" class="content-section">
+    <div class="social-feed-header">
+        <h2>Social Feed</h2>
+        <p>Connect, Share, and Inspire: Join a Community of Health-Conscious Savers</p>
+    </div>
+    <div class="social-feed-image">
+        <!-- Image will be placed here -->
+        <img src="pictures\social.png" alt="Community Social Feed">
+    </div>
+</section>
+
+
+
+    <section id="site-footer" class="footer-content">
+    <footer id="site-footer">
+        <div class="footer-content">
+            <img src="pictures/nutranav.png" alt="NutraNav Logo" class="footer-logo">
+            <div class="social-media-links">
+                <!-- Social media links -->
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="https://www.instagram.com/nutranav/" class="social-link" target="_blank">Instagram</a>
+            </div>
+            <div class="legal-links">
+                <!-- Legal links -->
+                <a href="#" class="button">Privacy Policy</a>
+                <a href="#" class="button">Accessibility</a>
+                <a href="#" class="button">Terms of Use</a>
+            </div>
+            <p>© 2024 NutraNav</p>
+        </div>
+    </footer>
+</section>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

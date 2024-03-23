@@ -1,0 +1,694 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Splash Screen Styling */
+#splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(108, 173, 248); /* Abby Blue */
+    color: white;
+    font-size: 2rem;
+    animation: fadeIn 2.5s ease-out;
+}
+
+/* FadeIn Animation for Splash Screen */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Hidden class for initially hiding elements */
+.hidden {
+    display: none;
+}
+
+/* Navigation Bar Styling */
+#navbar {
+    display: flex;
+    position: fixed; /* or 'absolute' */
+    width: 98%; /* Ensure it spans the full width */
+    z-index: 1000; /* Ensures it's above other content */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 25px 20px;
+    font-size: 1.25rem;
+}
+
+.logo {
+    font-weight: bold;
+    color: #89ABE3FF;
+}
+
+.nav-links, .auth-links {
+    display: flex;
+}
+
+.nav-link, .auth-link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-link:hover, .auth-link:hover {
+    color: rgb(108, 173, 248);
+}
+
+
+/* Common button styles */
+.logout-btn {
+    background-color: rgb(72, 171, 252); /* Button background color */
+    color: #ffffff; /* Text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor pointer to indicate clickable */
+    text-decoration: none; /* No underline */
+    font-size: 1rem; /* Text size */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color transition for hover */
+}
+
+
+.logout-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Specific styles for the logout button if needed */
+.logout-btn {
+    margin-left: 20px; /* Ensures consistent spacing with nav links */
+    font-weight: bold; /* Bold text for the button */
+}
+
+/* Ensure links in the navbar have no border when focused for a cleaner look */
+#navbar a:focus, .button:focus {
+    outline: none;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* This will be applied to the main scrolling container, which could be the body or a specific div */
+html, body {
+    height: 100%;
+    margin: 0; /* Removes default margin */
+    overflow-y: scroll;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    scroll-snap-type: y mandatory; /* Enables vertical scroll snapping */
+}
+
+/* Centered Introductory Section */
+#home {
+    background-color: rgb(108, 173, 248); /* Keeping the blue background */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15vh 20px 10vh; /* Adjusted padding to ensure content is centered */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center;
+    height: 75vh;
+    position: relative; /* For positioning the explore arrow */
+}
+
+#home h1 {
+    font-size: calc(1.5rem + 1.5vw); /* Dynamic size based on viewport width */
+    margin: 2vh 0 4vh; /* Adjusted margin for spacing */
+}
+
+#home p {
+    max-width: 90%; /* Allows text to fill more of the screen */
+    font-size: calc(1rem + 1vw); /* Dynamic font size for responsiveness */
+    margin-bottom: 6vh; /* More space before the CTA button */
+}
+
+
+.cta-button {
+    font-size: 1.2rem;
+    padding: 15px 40px;
+    background-color: #FFFFFF;
+    color: rgb(108, 173, 248);
+    border: none;
+    border-radius: 25px; /* Rounded corners for the button */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #333;
+    color: #FFFFFF;
+}
+
+.explore-arrow {
+    position: absolute;
+    bottom: 20px; /* Positioned at the bottom */
+    font-size: 2rem; /* Larger size for visibility */
+    animation: bounce 2s infinite; /* Bouncing animation */
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Adjust the .content-section to ensure consistent full-screen sections */
+.content-section {
+    scroll-snap-align: start; /* Keeps snap feature */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full viewport width */
+    display: flex;
+    flex-direction: column; /* Stacks child elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 40px; /* Adjusted padding */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Retained shadow for depth */
+    font-size: 24px; /* Retained font size */
+    color: #333; /* Retained text color */
+    background-color: #bfccdbdc; /* Adjusted background for consistency */
+    margin: 0 auto; /* Ensures no unnecessary margin */
+    overflow: hidden; /* Prevents overflow to keep the section contained */
+}
+
+/* Enhanced "Search Groceries" Section for better screen utilization */
+#search-groceries {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1vh 0vw; /* Slightly increased vertical padding and decreased horizontal padding for better utilization */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensures full width */
+    height: 100vh; /* Full viewport height to center the form vertically */
+}
+
+/* Optimized Search Form Styling */
+#search-form {
+    width: 90%; /* Adjust based on design preference, increased to make the form larger */
+    max-width: 800px; /* Increases practical width limit for larger screens */
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: center; /* Centers form elements */
+    gap: 20px; /* Adds space between input and button */
+}
+
+#search-form input[type="text"], 
+#search-form button {
+    width: 100%; /* Full width within form's constraints */
+    padding: 20px; /* Increased padding for a larger touch area */
+    font-size: 20px; /* Increased font size for better readability */
+    border-radius: 30px; /* Slightly more rounded for a modern look */
+}
+
+#search-form input[type="text"] {
+    border: 2px solid rgb(108, 173, 248);
+    outline: none; /* Removes the default focus outline */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Enhanced inner shadow for more depth */
+    margin-bottom: 0; /* Adjust margin between input and button as needed */
+}
+
+#search-form button {
+    background-color: rgb(108, 173, 248);
+    color: white;
+    border: none; /* Eliminates the border */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for interaction */
+}
+
+#search-form button:hover {
+    background-color: #3282fa; /* Hover state */
+    transform: scale(1.08); /* More pronounced growth effect */
+}
+
+/* Meal Planning____________________________________________________________________ */
+
+
+
+#meal-planning {
+    text-align: center;
+    padding: 0px 0px; /* Increased padding for better spacing */
+    background-color: #f0f4f8; /* Light background for contrast */
+}
+
+.meal-planning-intro h2, .meal-planning-intro p {
+    margin-bottom: 20px;
+    color: #333; /* Darker text for better readability */
+}
+
+.meal-cards-slider {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards horizontally */
+    gap: 20px; /* Space between cards */
+    padding: 20px 0; /* Padding around the cards */
+}
+
+.meal-card {
+    position: relative;
+    width: calc(33.333% - 20px); /* Three cards per row, accounting for gap */
+    height: auto; /* Auto height based on content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the top */
+    background-color: #ffffff; /* White background for the card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure content fits within the rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.meal-card:hover {
+    transform: translateY(-25px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 15px rgb(127, 202, 245); /* Enhanced shadow on hover */
+}
+
+.meal-image {
+    width: 100%; /* Ensure image covers card width */
+    height: auto; /* Adjust height automatically */
+    object-fit: cover; /* Cover the designated area without losing aspect ratio */
+    border-bottom: 1px solid #eaeaea; /* Subtle separation from the content */
+}
+
+.meal-info {
+    padding: 15px;
+    text-align: center;
+    background: #ffffff; /* Light background for the info section */
+    width: 100%; /* Ensure it matches card width */
+}
+
+.meal-info h3, .meal-info p {
+    margin: 0px 0;
+    color: #000000; /* Darker text for contrast */
+}
+
+@media (max-width: 768px) {
+    .meal-card {
+        width: calc(50% - 20px); /* Two cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .meal-card {
+        width: 100%; /* Full width cards on very small screens */
+    }
+}
+
+/* Basket Section Improvements________________________________________________________ */
+
+#basket {
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    margin: auto;
+    padding: 20px; /* Adjusted padding to ensure it doesn't touch the edges */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basket-header {
+    background-color: #63afff; /* Lighter shade for a fresh look */
+    color: white;
+    width: calc(100% - 40px); /* Adjust width to account for padding */
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.basket-header h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.basket-header p {
+    margin: 15px 0 0;
+    font-size: 1.2rem;
+}
+
+#basket {
+    background-color: #F7F7F7; /* Soft background color for contrast */
+    padding: 5px 80px; /* Increased padding to prevent cutting off and give more space */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 40px auto; /* Center the section and give it top and bottom space */
+    max-width: 70%; /* Increase max width to use more screen space */
+    text-align: center; /* Center-align the text */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Professional font */
+}
+
+#basket h2 {
+    color: #333; /* Dark color for the title */
+    background-color: #ffffff; /* Vibrant blue background */
+    padding: 8px 160px; /* Padding around the text for emphasis */
+    margin: 0 auto 15px; /* Adjusted margin for proper spacing */
+    padding-top: 0px; /* Ensure the top doesn't get cut off */
+    font-size: 35px; /* Increase font size for prominence */
+    display: inline-block; /* Makes the background wrap the text */
+    border-radius: 4px; /* Optional: adds rounded corners to the background */
+    margin-top: 130px;
+}
+
+
+#basket p {
+    color: #666; /* Lighter than the title for contrast */
+    margin-bottom: 30px; /* Space before the main content starts */
+    font-size: 18px; /* Slightly larger for emphasis */
+}
+
+/* Search and Add Item Styles */
+#item-search {
+    margin: 20px auto 30px; /* Adjust margins for better spacing */
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    gap: 15px; /* Space between the input and button */
+}
+
+#item-search input, #item-search button {
+    padding: 12px 20px; /* Increased padding for a better look and feel */
+    font-size: 16px; /* Larger font size for readability */
+    border: 2px solid #ccc; /* Solid border for definition */
+    background: #fff; /* White background for cleanliness */
+    border-radius: 5px; /* Rounded edges for modernity */
+    width: auto; /* Adjust width automatically based on content */
+}
+
+#item-search button {
+    background-color: #4CAF50; /* Green background for action indication */
+    color: white; /* White text for readability */
+    cursor: pointer; /* Change cursor to indicate clickable */
+}
+
+#item-search button:hover {
+    background-color: #449D48; /* Slightly darker green on hover */
+}
+
+
+/* Table Styling for Expanded View */
+#basket table {
+    width: 100%; /* Use the full width of its container */
+    border-collapse: collapse; /* Collapse borders for a clean look */
+}
+
+#basket th, #basket td {
+    text-align: left;
+    padding: 10px; /* Increased padding for a spacious look */
+    border-bottom: 1px solid #ddd; /* Light border for separation */
+}
+
+/* Adjustments for Small Screens */
+@media (max-width: 768px) {
+    #basket {
+        padding: 40px 20px; /* Reduce padding on smaller screens for space efficiency */
+        max-width: 95%; /* Use even more of the screen width on small devices */
+    }
+
+    #item-search {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        gap: 10px; /* Reduce gap for vertical stacking */
+    }
+
+    #item-search input, #item-search button {
+        width: 100%; /* Full width for inputs and buttons on small screens */
+    }
+}
+
+/* Fridge and Pantry____________________________________________________________________ */
+#inventory-management {
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inventory-header {
+    background-color: #63afff;
+    color: white;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.inventory-header h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.inventory-header p {
+    margin: 15px 0 0;
+    font-size: 1.2rem;
+}
+
+.inventory-body {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+}
+
+.fridge-section, .pantry-section {
+    flex: 1;
+    background: #f8f9fa;
+    padding: 20px;
+    margin: 0 40px; /* Adds margin to the left and right */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.fridge-section::before, .pantry-section::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    width: 60px;
+}
+
+.fridge-section::before {
+    background: url('fridge-icon.png') no-repeat center center;
+    background-size: contain;
+}
+
+.pantry-section::before {
+    background: url('pantry-icon.png') no-repeat center center;
+    background-size: contain;
+}
+
+.fridge-items li, .pantry-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.item-quantity, .item-expiry {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+
+
+/* Health____________________________________________________________________ */
+#health {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 0px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#health h2 {
+    color: #63afff;
+    margin-bottom: 10px;
+    margin-top: 120px;
+}
+
+#health p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.health-features-grid {
+    display: grid;
+    /* Adjusted to have 2 columns explicitly on larger screens, ensuring cards take up more space */
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 40px; /* Increased gap for visual separation */
+    justify-content: center;
+    padding: 20px;
+}
+
+.health-feature-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.health-feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.health-feature-card img {
+    width: 120px; /* Adjusted for visual balance with broader cards */
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.health-feature-card h3 {
+    margin-bottom: 10px;
+    color: #63afff;
+}
+
+.health-feature-card p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .health-features-grid {
+        grid-template-columns: 1fr; /* Adapt to a single column layout on smaller screens */
+    }
+}
+
+
+/* Social Section____________________________________________________________________ */
+
+#social-feed {
+    text-align: center;
+    padding: 0px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Optional: Adds a light background color */
+}
+
+.social-feed-header h2 {
+    color: #63afff;
+    margin-bottom: 10px;
+    font-size: 2.5rem; /* Slightly larger for emphasis */
+}
+
+.social-feed-header p {
+    font-size: 1.2rem; /* Slightly larger for better readability */
+    margin-bottom: 30px; /* Increased spacing before the image */
+    color: #333;
+    max-width: 100%; /* Limit the width for better text alignment */
+    margin-left: auto; /* Center the paragraph */
+    margin-right: auto;
+}
+
+.social-feed-image img {
+    max-width: 100%; /* Full width of its container */
+    max-height: 60vh; /* Reduced to take up less vertical space */
+    object-fit: cover; /* Cover the area without losing aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+}
+
+
+/* Footer Styling____________________________________________________________________ */
+
+#site-footer {
+    scroll-snap-align: end; /* Adjusts the footer to be a snap point */
+    width: 100%;
+    background-color: #ffffff; /* Match the nav bar or choose another fitting color */
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 0px solid #ccc;
+  
+    padding: 0; /* Resets any default padding, adjust if needed for other elements */
+
+}
+
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-logo {
+    max-width: 100px; /* Adjust based on your logo's size */
+    margin-bottom: 20px;
+}
+
+.social-media-links, .legal-links {
+    margin-bottom: 20px;
+}
+
+.social-link, .button {
+    display: inline-block;
+    margin: 0 10px;
+    color: #6089fa; /* Use a color that matches your theme */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button {
+    background-color: #ffffff; /* Theme color */
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #6089fa; /* Darker shade for hover effect */
+}
+
+.social-media-links a:hover, .legal-links a:hover {
+    text-decoration: underline; /* Simple hover effect for links */
+}
+
+.logo img {
+    height: 80px; /* Example height, adjust as needed */
+    width: auto; /* Maintains aspect ratio */
+}

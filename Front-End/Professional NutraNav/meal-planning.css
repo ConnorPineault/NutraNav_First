@@ -1,0 +1,119 @@
+.meal-planning-container {
+    display: flex;
+    height: 100%;
+}
+
+.weekly-schedule, .meal-suggestions {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.day {
+    background: #8fc9f0;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.meal-slot {
+    background: #fff;
+    border: 2px dashed #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.meal-suggestions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.meal-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: move; /* Cursor indicates this item can be moved */
+}
+
+.meal-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.meal-card p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Meal Suggestions */
+
+
+.meal-suggestions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates a 4-column grid */
+    gap: 20px;
+    padding: 20px;
+    max-height: 50vh; /* Adjusts the height to take up half the screen */
+    overflow-y: auto; /* Adds scrolling if content exceeds container height */
+}
+
+.meal-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.432);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ensures contents fit within the rounded corners */
+    text-align: left; /* Aligns text to the left */
+}
+
+.meal-card img {
+    width: 100%; /* Ensures image covers the width of the card */
+    height: 150px; /* Adjustable height for the meal image */
+    object-fit: cover; /* Ensures the image covers the set height without distortion */
+}
+
+.meal-info p {
+    margin: 10px; /* Adjust spacing around text for clarity */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .meal-suggestions {
+        grid-template-columns: repeat(2, 1fr); /* Adjusts to 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .meal-suggestions {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+    }
+}
+
+.meal-planning-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#mealSearch {
+    padding: 10px;
+    margin-bottom: 20px; /* Space between search bar and meal cards */
+    border: 3px solid #7abdd8;
+    border-radius: 8px;
+    width: calc(100% - 20px); /* Adjust based on padding and border */
+}
+
+.meal-suggestions {
+    overflow-y: auto; /* Allows scrolling within this container if needed */
+    max-height: calc(100vh - 60px); /* Adjust based on your header/nav height */
+}
+#mealSearch:focus {
+    outline: none; /* Removes the default focus outline */
+    border-color: #7abdd8; /* Keeps the border color consistent or changes it on focus */
+    box-shadow: 0 0 8px 0 rgba(122, 189, 216, 0.5); /* Optional: Adds a glow effect on focus */
+}

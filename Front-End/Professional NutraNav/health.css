@@ -1,0 +1,290 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+}
+
+/* Navigation Styles */
+nav#health-nav {
+    background-color: #54a5fc;
+    color: white;
+    padding: 1em 0;
+}
+
+nav#health-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav#health-nav ul li {
+    margin: 0 1em;
+}
+
+nav#health-nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav#health-nav ul li a:hover {
+    color: #e7f3fe;
+}
+
+/* Section Styles */
+section {
+    background-color: white;
+    margin: 2em;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Initially hide all sections */
+section {
+    display: none;
+}
+
+/* Show the dashboard by default */
+#dashboard {
+    display: block;
+}
+
+
+/* Dashboard Styles */
+#dashboard h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #4ba2ff; /* Theme color */
+}
+
+#dashboard .stat {
+    background: #e7f3fe;
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-title {
+    font-weight: bold;
+}
+
+.stat-value {
+    font-size: 1.2rem;
+}
+
+#meal-log, #vitamin-tracker, #pill-reminders {
+    margin-bottom: 2em;
+}
+
+#meal-log h3, #vitamin-tracker h3, #pill-reminders h3 {
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+#meal-log button, #pill-reminders button {
+    background: #4caf50;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#meal-log button:hover, #pill-reminders button:hover {
+    background: #367c2b;
+}
+
+
+
+/* Calorie Tracker Styles */
+#calorie-tracker {
+    display: block; /* Show this section, hide others */
+    /* Add more styles as necessary */
+}
+
+#calorie-tracker h2, #calorie-tracker h3 {
+    color: #57a6fc; /* Theme color for headers */
+}
+
+#quick-add-meal, #meal-log-display, #daily-intake-summary {
+    margin-bottom: 2em;
+    padding: 1em;
+    background: #cfd9e2;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#quick-add-meal input, #quick-add-meal button {
+    margin: 0.5
+    em 0;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    }
+    
+    #quick-add-meal button {
+    background-color: #54a5fc; /* NutraNav's theme blue */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+    
+    #quick-add-meal button:hover {
+    background-color: #367c2b; /* Darker shade on hover */
+    }
+    
+    #meals-list {
+    list-style: none;
+    padding-left: 0;
+    }
+    
+    #meals-list li {
+    background: white;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    #daily-intake-summary canvas {
+        width: 100%;
+        max-width: 600px;
+        height: auto; /* Adjust height as necessary, potentially with JS to maintain aspect ratio */
+        }
+
+
+
+
+
+
+
+
+    /* Hydration Tracker Styles */
+    #hydration-tracker {
+        display: block; /* Show this section, hide others */
+    }
+    
+    #hydration-goal {
+        text-align: center;
+        margin-bottom: 2em;
+    }
+    
+    #hydration-goal-slider {
+        width: 100%;
+        margin: 1em 0;
+    }
+    
+    #update-hydration-goal {
+        background-color: #4caf50;
+        color: white;
+        padding: 0.5em 1em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    #update-hydration-goal:hover {
+        background-color: #367c2b;
+    }
+    
+    #water-intake-illustration {
+        background: url('pictures/Oatmeal.png') no-repeat center center;
+        background-size: contain;
+        position: relative;
+    }
+    
+    #water-level {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #54a; /* A blue color to represent water */
+        transition: height 0.3s ease;
+    }
+    
+    #water-intake-value {
+        display: block;
+        text-align: center;
+    }
+    
+    #add-water-intake {
+        background-color: #54a5fc;
+        color: white;
+        padding: 0.5em 1em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    #add-water-intake:hover {
+        background-color: #367c2b;
+    }
+    
+    #hydration-history-chart {
+        width: 100%;
+        max-width: 600px;
+        height: auto; /* Adjust height as necessary, potentially with JS to maintain aspect ratio */
+    }
+    
+    /* Historical Data Styles */
+    #hydration-history {
+    margin-top: 2em;
+    }
+    
+    /* Additional responsive design styles if needed /
+    @media only screen and (max-width: 768px) {
+    / Your responsive styles here */
+    
+    
+
+/* Activity Tracker Styles */
+#activity-tracker {
+    /* Specific styles for the activity tracker */
+}
+
+/* Health Insights Styles */
+#health-insights {
+    /* Specific styles for health insights */
+}
+
+/* Settings & Integration Styles */
+#settings {
+    /* Specific styles for settings & integration */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    nav#health-nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav#health-nav ul li {
+        margin: 0.5em 0;
+    }
+    
+    /* Adjust sections for mobile view */
+    section {
+        margin: 1em;
+        padding: 1em;
+    }
+}
+
+
+

@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Groceries - NutraNav</title>
+    <link rel="stylesheet" href="common.css"> <!-- Common Styles -->
+    <link rel="stylesheet" href="basket.css"> <!-- Page Specific Styles -->
+</head>
+<body>
+
+
+ <!-- Navigation Bar -->
+ <nav id="navbar">
+    <a href="index.html?skipSplash=true" class="logo">
+        <img src="pictures/nutranav.png" alt="NutraNav Logo">
+    </a>
+
+    <div class="nav-links">
+        <a href="search-groceries.html" class="nav-link">Search Groceries</a>
+        <a href="meal-planning.html" class="nav-link">Meal Planning</a>
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="basket.html" class="nav-link">Basket</a>
+        <a href="pantry.html" class="nav-link">Pantry</a>
+        <a href="health.html" class="nav-link">Health</a>
+        <a href="social-feed.html" class="nav-link">Social Feed</a>
+    </div>
+
+    <div class="auth-links">
+        <!-- Update these links as necessary for your authentication flow -->
+        <a href="account.html" class="nav-link">Account</a>
+        <a href="login.html" class="auth-link">Login</a>
+        <a href="signup.html" class="auth-link">Sign Up</a>
+        <button id="logoutButton" class="logout-btn">Logout</button>
+
+    </div>
+</nav>
+
+<script>
+    document.getElementById('logoutButton').addEventListener('click', function(e) {
+        fetch('http://localhost:3000/api/logout', {
+            method: 'POST',
+            credentials: 'include' // Needed to include the session cookie in the request
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.text();
+            }
+            throw new Error('Logout failed');
+        })
+        .then(data => {
+            alert('Logout successful!');
+            window.location.href = 'Index.html'; // Redirect to the login page
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+    </script>
+    
+
+
+<section id="basket" class="content-section">
+    <h2>Your Basket</h2>
+    <div class="basket-items">
+        <!-- Example item -->
+        <div class="basket-item">
+            <div class="item-info">
+                <img src="path/to/meal/image.jpg" alt="Meal Image" class="item-image">
+                <div class="item-text">
+                    <h3 class="item-name">Chicken Salad</h3>
+                    <p class="item-description">A delicious chicken salad with a mix of fresh greens and a tangy dressing.</p>
+                    <span class="item-quantity">Quantity: 2</span>
+                    <span class="item-price">$10.00</span>
+                </div>
+            </div>
+            <div class="item-actions">
+                <button class="edit-item">Edit</button>
+                <button class="remove-item">Remove</button>
+            </div>
+        </div>
+        <!-- More items -->
+    </div>
+    <div class="basket-summary">
+        <div class="summary-item">
+            <span>Total:</span>
+            <span class="total-price">$20.00</span>
+        </div>
+        <div class="summary-item">
+            <span>Money Saved:</span>
+            <span class="savings-price">$5.00</span>
+        </div>
+    </div>
+    <button id="add-item" class="action-button">Add Item</button>
+</section>
+
+<!-- Inside your search-groceries section or equivalent -->
+<div id="search-results"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- footer_________________________________________________________ -->
+<footer id="site-footer">
+    <div class="footer-content">
+        <img src="pictures\nutranav.png" alt="NutraNav Logo" class="footer-logo">
+        <div class="social-media-links">
+            <!-- Example social media links; replace # with actual URLs -->
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="https://www.instagram.com/nutranav/" class="social-link" target="_blank">Instagram</a>
+        </div>
+        <div class="legal-links">
+            <!-- Buttons for important legal pages; replace # with actual URLs -->
+            <a href="#" class="button">Privacy Policy</a>
+            <a href="#" class="button">Accessibility</a>
+            <a href="#" class="button">Terms of Use</a>
+        </div>
+        <p>© 2024 NutraNav</p>
+    </div>
+</footer>
+<!-- footer_________________________________________________________ -->
+

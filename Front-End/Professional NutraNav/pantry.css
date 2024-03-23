@@ -1,0 +1,45 @@
+.pantry-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fridge, .pantry {
+    flex: 1;
+    margin: 0 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.fridge h3, .pantry h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fridge-items, .pantry-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.item-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.item-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.item-name, .item-quantity {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+

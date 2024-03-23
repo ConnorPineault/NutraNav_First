@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Groceries - NutraNav</title>
+    <link rel="stylesheet" href="common.css"> <!-- Common Styles -->
+    <link rel="stylesheet" href="social-feed.css"> <!-- Page Specific Styles -->
+</head>
+<body>
+
+
+
+
+ <!-- Navigation Bar -->
+ <nav id="navbar">
+    <a href="index.html?skipSplash=true" class="logo">
+        <img src="pictures/nutranav.png" alt="NutraNav Logo">
+    </a>
+
+    <div class="nav-links">
+        <a href="search-groceries.html" class="nav-link">Search Groceries</a>
+        <a href="meal-planning.html" class="nav-link">Meal Planning</a>
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="basket.html" class="nav-link">Basket</a>
+        <a href="pantry.html" class="nav-link">Pantry</a>
+        <a href="health.html" class="nav-link">Health</a>
+        <a href="social-feed.html" class="nav-link">Social Feed</a>
+    </div>
+
+    <div class="auth-links">
+        <!-- Update these links as necessary for your authentication flow -->
+        <a href="account.html" class="nav-link">Account</a>
+        <a href="login.html" class="auth-link">Login</a>
+        <a href="signup.html" class="auth-link">Sign Up</a>
+        <button id="logoutButton" class="logout-btn">Logout</button>
+
+    </div>
+</nav>
+
+
+
+
+
+<section id="social-feed" class="content-section">
+    <h2>Community Feed</h2>
+    <div class="posts-container">
+        <!-- Example Post -->
+        <div class="post">
+            <div class="post-header">
+                <img src="pictures\Nutranavs.png" alt="User Avatar" class="user-avatar">
+                <div class="user-info">
+                    <h3 class="user-name">NutraNav User</h3>
+                    <span class="post-time">2 hours ago</span>
+                </div>
+            </div>
+            <img src="pictures\steak.png" alt="Meal Photo" class="meal-photo">
+            <div class="post-content">
+                <p class="meal-description">Just made this delicious Steak for dinner tonight! #Yummy #DinnerIdeas #Sendingggg #Behave</p>
+            </div>
+            <div class="post-actions">
+                <button class="like-btn">Like</button>
+                <button class="comment-btn">Comment</button>
+                <button class="share-btn">Share</button>
+                <button class="add">Add to Meal Plan</button>
+            </div>
+            <!-- Comments Section (Optional) -->
+        </div>
+        <!-- Additional posts -->
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- footer_________________________________________________________ -->
+<footer id="site-footer">
+    <div class="footer-content">
+        <img src="pictures\nutranav.png" alt="NutraNav Logo" class="footer-logo">
+        <div class="social-media-links">
+            <!-- Example social media links; replace # with actual URLs -->
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="https://www.instagram.com/nutranav/" class="social-link" target="_blank">Instagram</a>
+        </div>
+        <div class="legal-links">
+            <!-- Buttons for important legal pages; replace # with actual URLs -->
+            <a href="#" class="button">Privacy Policy</a>
+            <a href="#" class="button">Accessibility</a>
+            <a href="#" class="button">Terms of Use</a>
+        </div>
+        <p>© 2024 NutraNav</p>
+    </div>
+</footer>
+<!-- footer_________________________________________________________ -->
+
+
+<script src="social-feed.js"></script> <!-- Common Scripts -->
+</body>
+</html>
