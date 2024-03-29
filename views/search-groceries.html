@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Groceries - NutraNav</title>
+    <link rel="stylesheet" href="/stylesheets/common.css"> <!-- Common Styles -->
+    <link rel="stylesheet" href="/stylesheets/search-groceries.css"> <!-- Page Specific Styles -->
+</head>
+<body>
+
+
+
+
+ <!-- Navigation Bar -->
+ <nav id="navbar">
+    <a href="index.html?skipSplash=true" class="logo">
+        <img src="pictures/nutranav.png" alt="NutraNav Logo">
+    </a>
+
+    <div class="nav-links">
+        <a href="/users/search-groceries" class="nav-link">Search Groceries</a>
+        <a href="/users/meal-planning" class="nav-link">Meal Planning</a>
+        <a href="/users/home" class="nav-link">Home</a>
+        <a href="/users/basket" class="nav-link">Basket</a>
+        <a href="/users/pantry" class="nav-link">Pantry</a>
+        <a href="/users/health" class="nav-link">Health</a>
+        <a href="/users/social-feed" class="nav-link">Social Feed</a>
+    </div>
+
+    <div class="auth-links">
+        <!-- Update these links as necessary for your authentication flow -->
+        <a href="/users/account" class="nav-link">Account</a>
+        <a href="/users/login" class="auth-link">Login</a>
+        <a href="/users/register" class="auth-link">Sign Up</a>
+        <button id="logoutButton" class="logout-btn">Logout</button>
+
+    </div>
+</nav>
+
+<!-- Logout Button -->
+<script>
+    document.getElementById('logoutButton').addEventListener('click', function(e) {
+        fetch('http://localhost:3000/api/logout', {
+            method: 'POST',
+            credentials: 'include' // Needed to include the session cookie in the request
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.text();
+            }
+            throw new Error('Logout failed');
+        })
+        .then(data => {
+            alert('Logout successful!');
+            window.location.href = 'Index.html'; // Redirect to the login page
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+    </script>
+
+
+    
+ <!-- Main Content -->
+ <div class="main-content">
+    <section id="search-groceries" class="content-section">
+        <h2>Find the Best Grocery Deals</h2>
+        <p>Search any grocery item to compare prices and find the best deals.</p>
+        <form id="search-form" class="search-form">
+            <input type="text" id="search-input" placeholder="Search for groceries..." aria-label="Search for groceries">
+            <button type="submit" id="search-button">Search</button>
+        </form>
+        <div id="search-results"></div>
+    </section>
+</div>
+    
+    
+<!-- footer_________________________________________________________ -->
+<footer id="site-footer">
+    <div class="footer-content">
+        <img src="pictures\nutranav.png" alt="NutraNav Logo" class="footer-logo">
+        <div class="social-media-links">
+            <!-- Example social media links; replace # with actual URLs -->
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="https://www.instagram.com/nutranav/" class="social-link" target="_blank">Instagram</a>
+        </div>
+        <div class="legal-links">
+            <!-- Buttons for important legal pages; replace # with actual URLs -->
+            <a href="#" class="button">Privacy Policy</a>
+            <a href="#" class="button">Accessibility</a>
+            <a href="#" class="button">Terms of Use</a>
+        </div>
+        <p>© 2024 NutraNav</p>
+    </div>
+</footer>
+<!-- footer_________________________________________________________ -->
+
+
+
+    <script src="search-groceries.js"></script> <!-- Common Scripts -->
+</body>
+</html>

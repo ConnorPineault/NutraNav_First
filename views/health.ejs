@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutraNav Health Dashboard</title>
+    <link rel="stylesheet" href="/stylesheets/common.css"> <!-- Common Styles -->
+    <link rel="stylesheet" href="/stylesheets/health.css"> <!-- Page Specific Styles -->
+</head>
+<body>
+
+
+
+
+ <!-- Navigation Bar -->
+ <nav id="navbar">
+    <a href="index.html?skipSplash=true" class="logo">
+        <img src="pictures/nutranav.png" alt="NutraNav Logo">
+    </a>
+
+    <div class="nav-links">
+        <a href="/users/search-groceries" class="nav-link">Search Groceries</a>
+        <a href="/users/meal-planning" class="nav-link">Meal Planning</a>
+        <a href="/users/home" class="nav-link">Home</a>
+        <a href="/users/basket" class="nav-link">Basket</a>
+        <a href="/users/pantry" class="nav-link">Pantry</a>
+        <a href="/users/health" class="nav-link">Health</a>
+        <a href="/users/social-feed" class="nav-link">Social Feed</a>
+    </div>
+
+    <div class="auth-links">
+        <!-- Update these links as necessary for your authentication flow -->
+        <a href="/users/account" class="nav-link">Account</a>
+        <a href="/users/login" class="auth-link">Login</a>
+        <a href="/users/register" class="auth-link">Sign Up</a>
+        <button id="logoutButton" class="logout-btn">Logout</button>
+
+    </div>
+</nav>
+
+    
+<!-- Health Dashboard Navigation -->
+<nav id="health-nav">
+    <ul>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#calorie-tracker">Calorie Tracker</a></li>
+        <li><a href="#hydration-tracker">Hydration Tracker</a></li>
+        <li><a href="#activity-tracker">Activity Tracker</a></li>
+        <li><a href="#medication-tracker">Medication</a></li>
+        <li><a href="#health-insights">Health Insights</a></li>
+        <li><a href="#settings">Settings & Integration</a></li>
+    </ul>
+</nav>
+
+<!-- Health Dashboard Section -->
+<section id="dashboard">
+    <h2>Your Health Summary</h2>
+
+    <!-- Summary Stats -->
+    <div id="summary-stats">
+        <div class="stat">
+            <span class="stat-title">Calories</span>
+            <span id="calories-value" class="stat-value">1200/2000 kcal</span>
+        </div>
+        <div class="stat">
+            <span class="stat-title">Hydration</span>
+            <span id="hydration-value" class="stat-value">1.5/2 L</span>
+        </div>
+        <div class="stat">
+            <span class="stat-title">Activity</span>
+            <span id="activity-value" class="stat-value">5000 steps</span>
+        </div>
+    </div>
+
+    <!-- Meal Log -->
+    <div id="meal-log">
+        <h3>Today's Meals</h3>
+        <!-- Meal items will be dynamically added here -->
+        <button id="add-meal-btn">+ Add Meal</button>
+    </div>
+
+    <!-- Vitamin Tracker -->
+    <div id="vitamin-tracker">
+        <h3>Vitamin Intake</h3>
+        <!-- Vitamin intake items will be dynamically added here -->
+    </div>
+
+    <!-- Pill/Medication Reminders -->
+    <div id="pill-reminders">
+        <h3>Pill & Medication Schedule</h3>
+        <ul id="pill-schedule">
+        <!-- List of pills/medications will be dynamically added here -->
+        </ul>
+        <button id="add-pill-btn">+ Add Medication</button>
+        </div>
+        
+        </section>
+
+<!-- Calorie Tracker Section -->
+<section id="calorie-tracker" class="health-section">
+    <h2>Calorie Tracker</h2>
+
+    <!-- Quick Add Meal Feature -->
+    <div id="quick-add-meal">
+        <h3>Add a Meal</h3>
+        <input type="text" id="meal-name-input" placeholder="What did you eat?" aria-label="Meal Name">
+        <input type="number" id="calorie-input" placeholder="Calories" aria-label="Calories">
+        <button id="add-meal-submit" onclick="addMeal()">Add</button>
+    </div>
+
+    <!-- Meal Log Display -->
+    <div id="meal-log-display">
+        <h3>Today's Meal Log</h3>
+        <ul id="meals-list">
+            <!-- Dynamically populated list of meals and calories -->
+        </ul>
+    </div>
+
+    <!-- Daily Caloric Intake Summary -->
+    <div id="daily-intake-summary">
+        <h3>Daily Intake Summary</h3>
+        <canvas id="calorie-intake-chart"></canvas> <!-- Placeholder for a chart, requires JS library like Chart.js -->
+    </div>
+</section>
+
+
+
+<!-- Hydration Tracker Section -->
+<section id="hydration-tracker" class="health-section">
+    <h2>Hydration Tracker</h2>
+    
+    <!-- Daily Hydration Goal -->
+    <div id="hydration-goal">
+        <h3>Daily Goal</h3>
+        <p id="hydration-goal-value">Goal: 2L</p>
+        <input type="range" id="hydration-goal-slider" min="1" max="4" value="2" step="0.1" aria-label="Daily hydration goal">
+        <button id="update-hydration-goal">Update Goal</button>
+    </div>
+
+    <!-- Water Intake Log -->
+    <div id="water-intake">
+        <h3>Today's Intake</h3>
+        <div id="water-intake-illustration">
+            <!-- Dynamic water bottle or glass illustration -->
+            <div id="water-level" style="height: 50%;"> <!-- Adjust height based on intake -->
+                <span id="water-intake-value">1L</span>
+            </div>
+        </div>
+        <button id="add-water-intake">+ Add 250ml</button>
+    </div>
+
+    <!-- Historical Data -->
+    <div id="hydration-history">
+        <h3>Intake History</h3>
+        <canvas id="hydration-history-chart"></canvas> <!-- Placeholder for hydration history chart -->
+    </div>
+</section>
+
+
+
+
+<!-- Activity Tracker Section -->
+<section id="activity-tracker">
+    <!-- Content will be loaded by health.js -->
+</section>
+
+<!-- Health Insights Section -->
+<section id="health-insights">
+    <!-- Content will be loaded by health.js -->
+</section>
+
+<!-- Health Insights Section -->
+<section id="medication-tracker">
+    <!-- Content will be loaded by health.js -->
+</section>
+
+<!-- Settings & Integration Section -->
+<section id="settings">
+    <!-- Content will be loaded by health.js -->
+</section>
+
+
+
+
+
+
+
+
+
+<!-- footer_________________________________________________________ -->
+<footer id="site-footer">
+    <div class="footer-content">
+        <img src="pictures\nutranav.png" alt="NutraNav Logo" class="footer-logo">
+        <div class="social-media-links">
+            <!-- Example social media links; replace # with actual URLs -->
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="https://www.instagram.com/nutranav/" class="social-link" target="_blank">Instagram</a>
+        </div>
+        <div class="legal-links">
+            <!-- Buttons for important legal pages; replace # with actual URLs -->
+            <a href="#" class="button">Privacy Policy</a>
+            <a href="#" class="button">Accessibility</a>
+            <a href="#" class="button">Terms of Use</a>
+        </div>
+        <p>© 2024 NutraNav</p>
+    </div>
+</footer>
+<!-- footer_________________________________________________________ -->
+
+
+<script src="health.js"></script> <!-- Common Scripts -->
+</body>
+</html>

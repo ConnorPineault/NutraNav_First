@@ -1,0 +1,222 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Groceries - NutraNav</title>
+    <link rel="stylesheet" href="/stylesheets/common.css"> <!-- Common Styles -->
+    <link rel="stylesheet" href="/stylesheets/meal-planning.css"> <!-- Page Specific Styles -->
+</head>
+<body>
+
+
+
+ <!-- Navigation Bar -->
+ <nav id="navbar">
+    <a href="index.html?skipSplash=true" class="logo">
+        <img src="pictures/nutranav.png" alt="NutraNav Logo">
+    </a>
+
+    <div class="nav-links">
+        <a href="/users/search-groceries" class="nav-link">Search Groceries</a>
+        <a href="/users/meal-planning" class="nav-link">Meal Planning</a>
+        <a href="/users/home" class="nav-link">Home</a>
+        <a href="/users/basket" class="nav-link">Basket</a>
+        <a href="/users/pantry" class="nav-link">Pantry</a>
+        <a href="/users/health" class="nav-link">Health</a>
+        <a href="/users/social-feed" class="nav-link">Social Feed</a>
+    </div>
+
+    <div class="auth-links">
+        <!-- Update these links as necessary for your authentication flow -->
+        <a href="/users/account" class="nav-link">Account</a>
+        <a href="/users/login" class="auth-link">Login</a>
+        <a href="/users/signup" class="auth-link">Sign Up</a>
+        <button id="logoutButton" class="logout-btn">Logout</button>
+
+    </div>
+</nav>
+
+
+
+
+
+<section id="meal-planning" class="content-section">
+    <div class="meal-planning-container">
+        <div class="weekly-schedule">
+            <!-- Example for one day -->
+            <div class="day" draggable="false">
+                <h3>Monday</h3>
+                <div class="meal-slot" id="monday-breakfast" ondrop="drop(event)" ondragover="allowDrop(event)">Breakfast</div>
+                <div class="meal-slot" id="monday-lunch" ondrop="drop(event)" ondragover="allowDrop(event)">Lunch</div>
+                <div class="meal-slot" id="monday-dinner" ondrop="drop(event)" ondragover="allowDrop(event)">Dinner</div>
+            </div>
+
+            <div class="day" draggable="false">
+                <h3>Tuedsday</h3>
+                <div class="meal-slot" id="monday-breakfast" ondrop="drop(event)" ondragover="allowDrop(event)">Breakfast</div>
+                <div class="meal-slot" id="monday-lunch" ondrop="drop(event)" ondragover="allowDrop(event)">Lunch</div>
+                <div class="meal-slot" id="monday-dinner" ondrop="drop(event)" ondragover="allowDrop(event)">Dinner</div>
+            </div>
+
+            <div class="day" draggable="false">
+                <h3>Wednesday</h3>
+                <div class="meal-slot" id="monday-breakfast" ondrop="drop(event)" ondragover="allowDrop(event)">Breakfast</div>
+                <div class="meal-slot" id="monday-lunch" ondrop="drop(event)" ondragover="allowDrop(event)">Lunch</div>
+                <div class="meal-slot" id="monday-dinner" ondrop="drop(event)" ondragover="allowDrop(event)">Dinner</div>
+            </div>
+
+            <div class="day" draggable="false">
+                <h3>Thursday</h3>
+                <div class="meal-slot" id="monday-breakfast" ondrop="drop(event)" ondragover="allowDrop(event)">Breakfast</div>
+                <div class="meal-slot" id="monday-lunch" ondrop="drop(event)" ondragover="allowDrop(event)">Lunch</div>
+                <div class="meal-slot" id="monday-dinner" ondrop="drop(event)" ondragover="allowDrop(event)">Dinner</div>
+            </div>
+
+            <div class="day" draggable="false">
+                <h3>Friday</h3>
+                <div class="meal-slot" id="monday-breakfast" ondrop="drop(event)" ondragover="allowDrop(event)">Breakfast</div>
+                <div class="meal-slot" id="monday-lunch" ondrop="drop(event)" ondragover="allowDrop(event)">Lunch</div>
+                <div class="meal-slot" id="monday-dinner" ondrop="drop(event)" ondragover="allowDrop(event)">Dinner</div>
+            </div>
+
+            <div class="day" draggable="false">
+                <h3>Saturday</h3>
+                <div class="meal-slot" id="monday-breakfast" ondrop="drop(event)" ondragover="allowDrop(event)">Breakfast</div>
+                <div class="meal-slot" id="monday-lunch" ondrop="drop(event)" ondragover="allowDrop(event)">Lunch</div>
+                <div class="meal-slot" id="monday-dinner" ondrop="drop(event)" ondragover="allowDrop(event)">Dinner</div>
+            </div>
+
+            <div class="day" draggable="false">
+                <h3>Sunday</h3>
+                <div class="meal-slot" id="monday-breakfast" ondrop="drop(event)" ondragover="allowDrop(event)">Breakfast</div>
+                <div class="meal-slot" id="monday-lunch" ondrop="drop(event)" ondragover="allowDrop(event)">Lunch</div>
+                <div class="meal-slot" id="monday-dinner" ondrop="drop(event)" ondragover="allowDrop(event)">Dinner</div>
+            </div>
+        </div>
+
+
+<!-- Meal Suggestions -->
+
+<div class="meal-planning-side">
+    <!-- Search Bar -->
+    <input type="text" id="mealSearch" placeholder="Search meals..." onkeyup="filterMeals()">
+    
+    <div class="meal-suggestions">
+
+    <!-- Meal Card 1 -->
+    <div class="meal-card" draggable="true" id="meal1" ondragstart="drag(event)">
+        <img src="pictures\Nutranavs.png" alt="Meal Image">
+        <div class="meal-info">
+            <p class="meal-name">Chicken Salad</p>
+            <p class="meal-time">Prep Time: 20 mins</p>
+            <p class="meal-difficulty">Difficulty: Easy</p>
+        </div>
+    </div>
+    
+    <!-- Add additional meal cards (2-8) with similar structure -->
+    <!-- Meal Card 2 -->
+
+
+    <div class="meal-card" draggable="true" id="meal2" ondragstart="drag(event)">
+        <img src="pictures\steak.png" alt="Meal Image">
+        <div class="meal-info">
+            <p class="meal-name">Beef Stir-Fry</p>
+            <p class="meal-time">Prep Time: 30 mins</p>
+            <p class="meal-difficulty">Difficulty: Medium</p>
+        </div>
+    </div>
+    
+    <div class="meal-card" draggable="true" id="meal2" ondragstart="drag(event)">
+        <img src="path/to/meal2/image.jpg" alt="Meal Image">
+        <div class="meal-info">
+            <p class="meal-name">Beef Stir-Fry</p>
+            <p class="meal-time">Prep Time: 30 mins</p>
+            <p class="meal-difficulty">Difficulty: Medium</p>
+        </div>
+    </div>
+
+    <div class="meal-card" draggable="true" id="meal2" ondragstart="drag(event)">
+        <img src="path/to/meal2/image.jpg" alt="Meal Image">
+        <div class="meal-info">
+            <p class="meal-name">Beef Stir-Fry</p>
+            <p class="meal-time">Prep Time: 30 mins</p>
+            <p class="meal-difficulty">Difficulty: Medium</p>
+        </div>
+    </div>
+
+    <div class="meal-card" draggable="true" id="meal2" ondragstart="drag(event)">
+        <img src="path/to/meal2/image.jpg" alt="Meal Image">
+        <div class="meal-info">
+            <p class="meal-name">Eggs</p>
+            <p class="meal-time">Prep Time: 30 mins</p>
+            <p class="meal-difficulty">Difficulty: Medium</p>
+        </div>
+    </div>
+
+    <div class="meal-card" draggable="true" id="meal2" ondragstart="drag(event)">
+        <img src="path/to/meal2/image.jpg" alt="Meal Image">
+        <div class="meal-info">
+            <p class="meal-name">Beef Stir-Fry</p>
+            <p class="meal-time">Prep Time: 30 mins</p>
+            <p class="meal-difficulty">Difficulty: Medium</p>
+        </div>
+    </div>
+
+    <div class="meal-card" draggable="true" id="meal2" ondragstart="drag(event)">
+        <img src="path/to/meal2/image.jpg" alt="Meal Image">
+        <div class="meal-info">
+            <p class="meal-name">Beef Stir-Fry</p>
+            <p class="meal-time">Prep Time: 30 mins</p>
+            <p class="meal-difficulty">Difficulty: Medium</p>
+        </div>
+    </div>
+    <!-- Continue for meals 3 through 8 -->
+
+</div>
+
+
+   
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer_________________________________________________________ -->
+<footer id="site-footer">
+    <div class="footer-content">
+        <img src="pictures\nutranav.png" alt="NutraNav Logo" class="footer-logo">
+        <div class="social-media-links">
+            <!-- Example social media links; replace # with actual URLs -->
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="https://www.instagram.com/nutranav/" class="social-link" target="_blank">Instagram</a>
+        </div>
+        <div class="legal-links">
+            <!-- Buttons for important legal pages; replace # with actual URLs -->
+            <a href="#" class="button">Privacy Policy</a>
+            <a href="#" class="button">Accessibility</a>
+            <a href="#" class="button">Terms of Use</a>
+        </div>
+        <p>© 2024 NutraNav</p>
+    </div>
+</footer>
+<!-- footer_________________________________________________________ -->
+
+
+
+
+
+<script src="meal-planning.js"></script> <!-- Common Scripts -->
+</body>
+</html>

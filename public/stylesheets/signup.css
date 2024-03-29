@@ -1,0 +1,144 @@
+/* Common Styles */
+body, button, input {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-container {
+    text-align: center; /* Center the header text */
+    width: 100%;
+    padding: 10px 0; /* Add some padding at the top and bottom */
+    background-color: rgb(255, 255, 255); /* NutraNav blue background */
+    color: rgb(133, 203, 250); /* White text color */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+    position: fixed; /* Fix position to the top */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.header-container h1 {
+    color: rgb(133, 203, 250);
+    text-align: center;
+    margin: 0;
+    font-size: 2.5em; /* Increase font size */
+}
+
+body {
+    padding-top: 80px; /* Increase padding-top to push the form down */
+    background: linear-gradient(135deg, #6BC6FF, #E0F7FA); /* NutraNav gradient background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+/* Container Styles */
+.signup-container {
+    background: white;
+    padding: 50px; /* Increased padding */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* Softer shadow */
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Typography */
+h1 {
+    color: #03A9F4;
+    font-size: 2.5rem; /* Larger heading */
+    margin-bottom: 30px; /* More space below the heading */
+    letter-spacing: 1px; /* Letter spacing for the heading */
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form fields */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 24px);
+    padding: 15px; /* More padding for larger touch area */
+    font-size: 1rem; /* Larger font size */
+    border: 2px solid rgb(133, 203, 250); /* Same blue border */
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s; /* Smooth transition for all properties */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #03A9F4;
+    box-shadow: 0 0 8px rgba(3,169,244,0.5);
+}
+
+/* Button Styles */
+input[type="submit"] {
+    padding: 15px 20px; /* Larger padding */
+    font-size: 1rem; /* Larger font size */
+    font-weight: bold; /* Make the text bold */
+    background: rgb(133, 203, 250);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    transition: all 0.2s; /* Transition for all properties */
+}
+
+input[type="submit"]:hover {
+    background: #029be5; /* Slightly different blue for hover */
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transform: translateY(-3px); /* Lift the button */
+}
+
+/* Error Message Styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #FFCDD2;
+    margin: 5px 0;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Link Styles */
+a {
+    color: #03A9F4;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-top: 20px; /* More margin on top of the link */
+    font-size: 0.9rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .signup-container {
+        padding: 30px; /* Adjust padding for smaller screens */
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2rem; /* Slightly smaller font size for mobile */
+    }
+}

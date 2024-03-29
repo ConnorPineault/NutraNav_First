@@ -1,145 +1,256 @@
-const express = require('express');
-const bcrypt = require('bcrypt');
-const session = require('express-session');
-const pgSession = require('connect-pg-simple')(session);
-const pool = require('./db');
-const cors = require('cors'); // CORS import
-const upload = require('./config/multerConfig');
-
-
-// Correct CORS options
-const corsOptions = {
-    origin: 'http://127.0.0.1:5500', // Replace with your frontend's origin
-    credentials: true,
-    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
-
+const express = require("express");
+const { pool } = require("./dbConfig");
+const bcrypt = require("bcrypt");
+const passport = require("passport");
+const flash = require("express-flash");
+const session = require("express-session");
+require("dotenv").config();
 const app = express();
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(cors(corsOptions)); // Use CORS with the correct options
-app.use(express.static('Front-End/Professional NutraNav'));
-app.use('/uploads', express.static('uploads'));
-app.use(session({
-    store: new pgSession({
-        pool: pool, // Connection pool
-        tableName: 'session' // Use another table name if there is a conflict
-    }),
-    // other settings...
-}));
-
-// Signup Route
-app.post('/api/signup', async (req, res) => {
-    const { fullname, email, password } = req.body; // Use fullname and email instead of username
-    const hashedPassword = await bcrypt.hash(password, 10);
-    
-    try {
-      // Insert user into the database
-      const result = await pool.query(
-        'INSERT INTO users (fullname, email, password) VALUES ($1, $2, $3) RETURNING id', 
-        [fullname, email, hashedPassword] // Use fullname and email here
-      );
-      res.json({ userId: result.rows[0].id, message: "Signup successful" });
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: "Internal server error" });
-    }
-  });
-  
-// Login Route
-app.post('/api/login', async (req, res) => {
-    const { email, password } = req.body;
-
-    try {
-        const { rows } = await pool.query('SELECT * FROM users WHERE email = $1', [email]);
-
-        if (rows.length > 0) {
-            const validPassword = await bcrypt.compare(password, rows[0].password);
-            if (validPassword) {
-                req.session.userId = rows[0].id; // Save user id to session
-                res.json({ message: "Login successful" });
-            } else {
-                res.status(401).json({ error: "Invalid credentials" });
-            }
-        } else {
-            res.status(404).json({ error: "User not found" });
-        }
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ error: "Internal server error" });
-    }
-});
-
-//Implement Logout Functionality
-
-app.post('/api/logout', (req, res) => {
-    req.session.destroy(err => {
-        if(err) {
-            return res.status(500).send('Could not log out, please try again.');
-        }
-        res.send('Logout successful');
-    });
-});
-
-  // checks if the user is logged in:
-  app.get('/api/isLoggedIn', (req, res) => {
-    if (req.session && req.session.userId) {
-        res.json({ isLoggedIn: true });
-    } else {
-        res.json({ isLoggedIn: false });
-    }
-});
-
-
-
-//This includes saving the profile data to the database and handling the profile picture upload
-
-app.post('/api/profile', upload.single('profile_picture'), async (req, res) => {
-    if (!req.session.userId) {
-        return res.status(401).send('Please log in to update your profile.');
-    }
-    const { age, gender, allergies, dietary_preferences, health_conditions, fitness_goals, bio } = req.body;
-    let profilePictureUrl = null;
-    if (req.file) {
-        profilePictureUrl = `/uploads/${req.file.filename}`; // Ensure you serve static files from /uploads
-    }
-
-    try {
-        await pool.query(`
-            INSERT INTO profiles (user_id, age, gender, allergies, dietary_preferences, health_conditions, fitness_goals, profile_picture_url, bio) 
-            VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
-            ON CONFLICT (user_id) DO UPDATE 
-            SET age = EXCLUDED.age, gender = EXCLUDED.gender, allergies = EXCLUDED.allergies, dietary_preferences = EXCLUDED.dietary_preferences, 
-                health_conditions = EXCLUDED.health_conditions, fitness_goals = EXCLUDED.fitness_goals, profile_picture_url = COALESCE(EXCLUDED.profile_picture_url, profiles.profile_picture_url), bio = EXCLUDED.bio
-        `, [req.session.userId, age, gender, allergies, dietary_preferences, health_conditions, fitness_goals, profilePictureUrl, bio]);
-        res.send('Profile updated successfully');
-    } catch (error) {
-        console.error(error);
-        res.status(500).send('Error updating profile');
-    }
-});
-
-
-app.get('/api/profile', async (req, res) => {
-    if (!req.session.userId) {
-        return res.status(401).send('Not logged in');
-    }
-    // Fetch user profile data from the database
-    try {
-        const userProfileData = await pool.query('SELECT * FROM profiles WHERE user_id = $1', [req.session.userId]);
-        if (userProfileData.rows.length > 0) {
-            res.json(userProfileData.rows[0]);
-        } else {
-            res.status(404).send('Profile not found');
-        }
-    } catch (error) {
-        console.error(error);
-        res.status(500).send('Server error');
-    }
-});
-
-
-// Start server
+const path = require('path')
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
+const initializePassport = require("./passportConfig");
+
+initializePassport(passport);
+
+// Middleware
+
+// Parses details from a form
+app.use(express.urlencoded({ extended: false }));
+app.set("view engine", "ejs");
+
+
+app.use(express.static(path.join(__dirname, 'public'))); 
+
+
+
+
+app.use(
+  session({
+    // Key we want to keep secret which will encrypt all of our information
+    secret: process.env.SESSION_SECRET,
+    // Should we resave our session variables if nothing has changes which we dont
+    resave: false,
+    // Save empty value if there is no vaue which we do not want to do
+    saveUninitialized: false
+  })
+);
+
+
+
+app.use(passport.initialize()); // Funtion inside passport which initializes passport
+app.use(passport.session());
+app.use(flash());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//=======================================================================//
+                          //VIEWS//
+
+
+
+
+
+
+
+app.get("/", (req, res) => {
+  res.render("index");
+});
+
+app.get("/users/register", checkAuthenticated, (req, res) => {
+  res.render("register.ejs");
+});
+
+app.get("/users/login", checkAuthenticated, (req, res) => {
+  
+  console.log(req.session.flash.error); // flash sets a messages variable. passport sets the error message
+  res.render("login.ejs");
+});
+
+app.get("/users/dashboard", checkNotAuthenticated, (req, res) => {
+  console.log(req.isAuthenticated());
+  res.render("dashboard", { user: req.user.name });
+});
+app.get("/users/home", checkNotAuthenticated, (req, res) => {
+  console.log(req.isAuthenticated());
+  res.render("home", { user: req.user.name });
+});
+app.get("/users/account", checkNotAuthenticated, (req, res) => {
+  console.log(req.isAuthenticated());
+  res.render("account", { user: req.user.name });
+});
+app.get("/users/basket", checkNotAuthenticated, (req, res) => {
+  console.log(req.isAuthenticated());
+  res.render("basket", { user: req.user.name });
+});
+app.get("/users/health", checkNotAuthenticated, (req, res) => {
+  console.log(req.isAuthenticated());
+  res.render("health", { user: req.user.name });
+});
+app.get("/users/pantry", checkNotAuthenticated, (req, res) => {
+  console.log(req.isAuthenticated());
+  res.render("pantry", { user: req.user.name });
+});
+app.get("/users/meal-planning", checkNotAuthenticated, (req, res) => {
+  console.log(req.isAuthenticated());
+  res.render("meal-planning", { user: req.user.name });
+});
+app.get("/users/social-feed", checkNotAuthenticated, (req, res) => {
+  console.log(req.isAuthenticated());
+  res.render("social-feed", { user: req.user.name });
+});
+app.get("/users/search-groceries", checkNotAuthenticated, (req, res) => {
+  console.log(req.isAuthenticated());
+  res.render("search-groceries", { user: req.user.name });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//=======================================================================//
+                          //END OF VIEWS//
+
+
+
+app.get("/users/logout", (req, res) => {
+  req.logout(function(err) {
+     if (err) {
+       console.error(err);
+       return res.status(500).send('Error logging out');
+     }
+     res.render("index", { message: "You have logged out successfully" });
+  });
+ });
+ 
+
+app.post("/users/register", async (req, res) => {
+  let { name, email, password, password2 } = req.body;
+
+  let errors = [];
+
+  console.log({
+    name,
+    email,
+    password,
+    password2
+  });
+
+  if (!name || !email || !password || !password2) {
+    errors.push({ message: "Please enter all fields" });
+  }
+
+  if (password.length < 6) {
+    errors.push({ message: "Password must be a least 6 characters long" });
+  }
+
+  if (password !== password2) {
+    errors.push({ message: "Passwords do not match" });
+  }
+
+  if (errors.length > 0) {
+    res.render("register", { errors, name, email, password, password2 });
+  } else {
+    hashedPassword = await bcrypt.hash(password, 10);
+    console.log(hashedPassword);
+
+    
+    // Validation passed
+    pool.query(
+      `SELECT * FROM users
+        WHERE email = $1`,
+      [email],
+      (err, results) => {
+        if (err) {
+          console.log(err);
+        }
+        console.log(results.rows);
+
+        if (results.rows.length > 0) {
+          return res.render("register", {
+            message: "Email already registered"
+          });
+        } else {
+          pool.query(
+            `INSERT INTO users (name, email, password)
+                VALUES ($1, $2, $3)
+                RETURNING id, password`,
+            [name, email, hashedPassword],
+            (err, results) => {
+              if (err) {
+                throw err;
+              }
+              console.log(results.rows);
+              req.flash("success_msg", "You are now registered. Please log in");
+              res.redirect("/users/login");
+            }
+          );
+        }
+      }
+    );
+  }
+});
+
+app.post(
+  "/users/login",
+  passport.authenticate("local", {
+    successRedirect: "/users/home",
+    failureRedirect: "/users/login",
+    failureFlash: true
+  })
+);
+
+function checkAuthenticated(req, res, next) {
+  if (req.isAuthenticated()) {
+    return res.redirect("/users/home");
+  }
+  next();
+}
+
+function checkNotAuthenticated(req, res, next) {
+  if (req.isAuthenticated()) {
+    return next();
+  }
+  res.redirect("/users/login");
+}
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
