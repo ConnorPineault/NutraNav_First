@@ -1,50 +1,156 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* Common Styles */
+body, button, input {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+.main-header {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #ffffff; /* NutraNav blue background */
+    color: rgb(108, 173, 248);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Body and Container Styles */
+body {
+    padding-top: 100px;
+    background: linear-gradient(135deg, rgb(108, 173, 248), #E0F7FA);
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .login-container {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+    padding: 50px; /* Increased padding */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* Softer shadow */
     width: 100%;
     max-width: 400px;
+    margin: auto;
+    animation: fadeIn 0.5s ease-out;
 }
 
-.form-group {
-    margin-bottom: 20px;
+@keyframes scaleIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form fields */
 }
 
-.form-group input[type="email"],
-.form-group input[type="password"] {
+input[type="email"],
+input[type="password"] {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #03A9F4;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-.login-btn {
-    background-color: #28a745;
-    color: #ffffff;
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: rgb(108, 173, 248)5;
+    box-shadow: 0 0 8px rgba(3,169,244,0.5);
+}
+
+/* Button Styles */
+input[type="submit"] {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: rgb(108, 173, 248);
+    color: white;
     border: none;
-    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 4px;
-    width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
 }
 
-.login-btn:hover {
-    background-color: #218838;
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    background: #029be5;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+
+/* Error and Success Message Styles */
+ul, .success-message, .error-message {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+li, .success-message, .error-message {
+    background-color: #FFCDD2;
+    color: #D32F2F; /* Darker text for better readability */
+    margin: 5px 0;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.success-message {
+    background-color: #C8E6C9;
+    color: #2E7D32;
+}
+
+/* Link Styles */
+a {
+    color: #03A9F4;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0277bd;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .login-container {
+        padding: 30px;
+        margin-top: 20px;
+    }
+
+    form input {
+        margin: 10px 0;
+    }
 }
