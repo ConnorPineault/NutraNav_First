@@ -9,9 +9,9 @@ body, button, input {
 .header-container {
     text-align: center; /* Center the header text */
     width: 100%;
-    padding: 10px 0; /* Add some padding at the top and bottom */
+    padding: 20px 0; /* Add some padding at the top and bottom */
     background-color: rgb(255, 255, 255); /* NutraNav blue background */
-    color: rgb(133, 203, 250); /* White text color */
+    color: rgb(108, 173, 248); /* White text color */
     box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle shadow for depth */
     position: fixed; /* Fix position to the top */
     top: 0; /* Align to the top */
@@ -20,7 +20,7 @@ body, button, input {
 }
 
 .header-container h1 {
-    color: rgb(133, 203, 250);
+    color: rgb(108, 173, 248);
     text-align: center;
     margin: 0;
     font-size: 2.5em; /* Increase font size */
@@ -28,7 +28,7 @@ body, button, input {
 
 body {
     padding-top: 80px; /* Increase padding-top to push the form down */
-    background: linear-gradient(135deg, #6BC6FF, #E0F7FA); /* NutraNav gradient background */
+    background: linear-gradient(135deg, rgb(108, 173, 248), #E0F7FA); /* NutraNav gradient background */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,7 +38,7 @@ body {
 
 /* Container Styles */
 .signup-container {
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 50px; /* Increased padding */
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* Softer shadow */
@@ -70,7 +70,7 @@ input[type="password"] {
     width: calc(100% - 24px);
     padding: 15px; /* More padding for larger touch area */
     font-size: 1rem; /* Larger font size */
-    border: 2px solid rgb(133, 203, 250); /* Same blue border */
+    border: 2px solid rgb(108, 173, 248); /* Same blue border */
     border-radius: 5px;
     outline: none;
     transition: all 0.3s; /* Smooth transition for all properties */
@@ -79,16 +79,17 @@ input[type="password"] {
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus {
-    border-color: #03A9F4;
+    border-color: rgb(108, 173, 248);
     box-shadow: 0 0 8px rgba(3,169,244,0.5);
 }
 
 /* Button Styles */
 input[type="submit"] {
+    width: 100%;
     padding: 15px 20px; /* Larger padding */
     font-size: 1rem; /* Larger font size */
     font-weight: bold; /* Make the text bold */
-    background: rgb(133, 203, 250);
+    background: rgb(108, 173, 248);
     color: white;
     border: none;
     border-radius: 5px;
